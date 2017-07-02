@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.database.api.services</groupId>
-	<artifactId>DBMS</artifactId>
+	<groupId>org.paypal.api.services</groupId>
+	<artifactId>PaymentManagement</artifactId>
 	<version>1.0.0</version>
 	
 	<url>http://maven.apache.org</url>
@@ -121,7 +121,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>DBMS</finalName>
+		<finalName>PaymentManagement</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
