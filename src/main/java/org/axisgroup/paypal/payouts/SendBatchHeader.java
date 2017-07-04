@@ -6,6 +6,7 @@ public class SendBatchHeader {
 	public String getSender_batch_id() {
 		return sender_batch_id;
 	}
+	//this is hot fix another hot fix
 	public void setSender_batch_id(String sender_batch_id) {
 		this.sender_batch_id = sender_batch_id;
 	}
