@@ -2979,3 +2979,8 @@
 2017-06-30 19:25:03,984 DEBUG  [AbstractServiceRegistryImpl] Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries 
 2017-06-30 19:25:03,984 INFO   [pooling] HHH10001008: Cleaning up connection pool [jdbc:mysql://67.79.25.189:3306/test] 
 2017-06-30 19:25:03,987 DEBUG  [BootstrapServiceRegistryImpl] Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries 
+2017-07-04 00:46:23,042 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-04 00:46:23,097 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-04 00:46:23,109 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.PaypalPayoutRequest@564718df] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@51b7e5df] 
+2017-07-04 00:46:24,299 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-04 00:46:24,300 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@51b7e5df] 

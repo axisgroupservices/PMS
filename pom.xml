@@ -9,7 +9,7 @@
 	<url>http://maven.apache.org</url>
 	<properties>
 		<junit.version>3.8.1</junit.version>
-		<SpringVersion>4.0.6.RELEASE</SpringVersion>
+		<SpringVersion>4.3.9.RELEASE</SpringVersion>
 		<spring-jdbc.version>4.0.6.RELEASE</spring-jdbc.version>
 		<json.version>20140107</json.version>
 		<jackson.version>1.9.10</jackson.version>
@@ -19,6 +19,11 @@
 	</properties>
 
 	<dependencies>
+	<dependency>
+	<groupId>org.axisgroup.client</groupId>
+	<artifactId>AxisGroup-RestBaseClient</artifactId>
+	<version>1.0.0</version>
+	</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
