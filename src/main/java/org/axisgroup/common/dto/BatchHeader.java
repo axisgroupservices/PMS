@@ -1,7 +1,10 @@
-package org.axisgroup.paypal.payouts.response;
+package org.axisgroup.common.dto;
 
-import org.axisgroup.paypal.payouts.SendBatchHeader;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
+
+@JsonInclude(Include.NON_DEFAULT)
 public class BatchHeader {
 	private String payout_batch_id;
 	private String batch_status;

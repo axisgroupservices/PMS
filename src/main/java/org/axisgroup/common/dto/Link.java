@@ -1,5 +1,10 @@
-package org.axisgroup.paypal.payouts.response;
+package org.axisgroup.common.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
+
+
+@JsonInclude(Include.NON_DEFAULT)
 public class Link {
 	
 	private String href;

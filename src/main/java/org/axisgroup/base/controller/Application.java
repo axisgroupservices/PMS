@@ -1,48 +1,86 @@
 package org.axisgroup.base.controller;
-import org.axisgroup.common.dto.Account;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Application {  
-public static void main(String[] args) {  
-      
-    //creating configuration object  
-    Configuration cfg=new Configuration();  
-    System.out.println();
-    cfg.configure("hibernate.cfg.xml");//populates the data of the configuration file  
-      
-    //creating seession factory object  
-    SessionFactory factory=cfg.buildSessionFactory();  
-      
-    //creating session object  
-    Session session=factory.openSession();  
-      
-    //creating transaction object  
-    Transaction t=session.beginTransaction();  
-          
-    ApplicationContext context =
-      	  new ClassPathXmlApplicationContext(new String[] {"dispatcher-servlet.xml"});
+import java.io.IOException;
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+import java.util.List;
 
-      	Account cust = (Account)context.getBean("AccountBean");
-      	cust.getAccountService().setAddress("123 st");
-      	cust.setPersonalAccount("new account");
-      	cust.getAccountService().setName("New Name");
-      	System.out.println(cust.getPersonalAccount());
+import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
+import org.axisgroup.client.response.GetContractInfoBySpotIdResponse;
+import org.axisgroup.confhandler.ConfigurationHandler;
+import org.axisgroup.confhandler.PrettyPrinterJson;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.roboadplacer.request.GetContractsInfoBySpotId;
+import org.springframework.web.client.RestTemplate;
 
-   
-    
-    session.persist(cust);
-      
-    t.commit();//transaction is committed  
-    session.close();  
-    
-    factory.close();
-      
-    System.out.println("successfully saved");  
-      
-}  
-}  
+public class Application {
+	private static final Logger logger = Logger.getLogger(AccountController.class);
+
+	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
+		// TODO Auto-generated method stub
+
+		GetContractsInfoBySpotId getContractsInfoBySpotIdRequest = new GetContractsInfoBySpotId();
+		getContractsInfoBySpotIdRequest.setSpotId("45");
+
+		RestTemplate restTemplate = new RestTemplate();
+		GetContractInfoBySpotIdResponse response = (GetContractInfoBySpotIdResponse) restTemplate.postForObject(
+				"http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email",
+				getContractsInfoBySpotIdRequest, GetContractInfoBySpotIdResponse.class);
+
+		PrettyPrinterJson.printObject(response);
+
+		List<String> paymentsplits = getAmountToCableOperator(response);
+
+		if (paymentsplits != null && response !=null) {
+			
+
+		}
+
+	}
+
+	private static List<String> getAmountToCableOperator(GetContractInfoBySpotIdResponse response) {
+		// TODO Auto-generated method stub
+
+		List<String> priceSplitsHolder = null;
+		String getCommisionPercent = ConfigurationHandler.getValueToConfigurationKey("commision.percent",
+				"env.properties");
+		String balanceTransferToOperator = null;
+		String amountCollectedString = null;
+		String amountToPyadvertisingString = null;
+
+		if (response != null) {
+			if (response.getContract() != null) {
+				double amountCollected = response.getContract().getPrice();
+				amountCollected = 450;
+				if (amountCollected != 0.0) {
+					if (StringUtils.isNotBlank(getCommisionPercent)) {
+						
+						priceSplitsHolder=new ArrayList<>();
+						Double chargedPercent = 1 + Double.parseDouble(getCommisionPercent) / 100;
+
+						DecimalFormat df = new DecimalFormat("#.00");
+
+						Double amountToCableOprator = (amountCollected / chargedPercent);
+						double amountToPyadvertising = amountCollected - amountToCableOprator;
+
+						balanceTransferToOperator = df.format(amountToCableOprator);
+						amountCollectedString = df.format(amountCollected);
+						amountToPyadvertisingString = df.format(amountToPyadvertising);
+
+						logger.info("Balance transfering to CableOpeartor is " + balanceTransferToOperator + " out of "
+								+ amountCollectedString + " and commision of " + getCommisionPercent
+								+ "% to pyAdvertising is " + amountToPyadvertisingString);
+
+						priceSplitsHolder.add(balanceTransferToOperator);
+						priceSplitsHolder.add(amountToPyadvertisingString);
+					}
+				}
+
+			}
+		}
+		return priceSplitsHolder;
+	}
+
+}

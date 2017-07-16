@@ -1,6 +1,9 @@
-package org.axisgroup.paypal.payouts;
+package org.axisgroup.paypal.payouts.request;
 
 import java.util.List;
+
+import org.axisgroup.common.dto.Item;
+import org.axisgroup.common.dto.SendBatchHeader;
 
 public class PaypalPayoutRequest {
 	

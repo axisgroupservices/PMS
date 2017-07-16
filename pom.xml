@@ -19,11 +19,7 @@
 	</properties>
 
 	<dependencies>
-	<dependency>
-	<groupId>org.axisgroup.client</groupId>
-	<artifactId>AxisGroup-RestBaseClient</artifactId>
-	<version>1.0.0</version>
-	</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -123,6 +119,22 @@
     <artifactId>hibernate-entitymanager</artifactId>
     <version>5.2.10.Final</version>
 </dependency>
+
+<dependency>
+			<groupId>com.paypal.sdk</groupId>
+			<artifactId>paypal-core</artifactId>
+			<version>1.6.9</version>
+			<type>jar</type>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.axisgroup.client</groupId>
+			<artifactId>AxisGroup-ClientInterface</artifactId>
+			<version>200.00.0</version>
+			<type>jar</type>
+		</dependency>
+		
+		
 
 	</dependencies>
 	<build>
