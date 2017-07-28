@@ -5720,3 +5720,2826 @@ Printing Response:::::::
   }
 } 
 2017-07-15 23:38:44,361 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-16 01:10:53,817 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:10:53,818 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 99 
+2017-07-16 01:10:53,819 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:10:54,300 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:10:54,403 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:10:54,418 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:10:55,236 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:10:55,236 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:10:55,430 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:10:55,430 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:10:55,430 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:10:55,431 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:10:55,431 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is null 
+2017-07-16 01:14:49,871 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:14:49,872 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 99 
+2017-07-16 01:14:49,873 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:14:50,322 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:14:50,414 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:14:50,424 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:14:51,254 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:14:51,254 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:14:51,406 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:14:51,407 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:14:51,407 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:14:51,407 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:14:51,411 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is No balance transfered. Something went wrong. Please check Pyadvertising for manual transfer 
+2017-07-16 01:23:45,303 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:23:45,305 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:23:45,306 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:23:45,816 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:23:45,912 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:23:45,923 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:23:46,703 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:23:46,704 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:23:46,923 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:23:46,923 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:23:46,923 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:23:46,924 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:23:46,928 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-16 01:23:46,928 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-16 01:23:46,928 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-16 01:23:46,928 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-16 01:23:46,928 DEBUG  [OrderConfirmationAndPaymentController] java.lang.NullPointerException 
+2017-07-16 01:23:46,929 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Error occured no balance was transfered. Please, contact PyAdvertising 
+2017-07-16 01:24:55,617 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:24:55,618 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:24:55,619 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:24:56,067 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:24:56,141 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:24:56,153 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:24:56,871 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:24:56,871 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:24:57,042 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:24:57,043 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:24:57,043 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:24:57,043 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:24:57,048 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-16 01:24:57,048 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-16 01:24:57,048 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-16 01:24:57,048 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-16 01:24:57,049 DEBUG  [OrderConfirmationAndPaymentController] java.lang.NullPointerException 
+2017-07-16 01:24:57,049 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Error occured no balance was transfered. Please, contact PyAdvertising 
+2017-07-16 01:29:51,964 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:29:51,965 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:29:51,967 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:29:52,461 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:29:52,543 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:29:52,555 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:29:53,359 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:29:53,359 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:29:53,529 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:29:53,529 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:29:53,530 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:29:53,534 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is No balance transfered. Something went wrong. Please check Pyadvertising for manual transfer 
+2017-07-16 01:30:56,469 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:30:56,470 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:30:56,472 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:30:56,933 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:30:57,016 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:30:57,031 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:30:57,831 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:30:57,831 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:30:58,000 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:30:58,000 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:30:58,000 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:30:58,005 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null.No balance transfered. Something went wrong. Please check Pyadvertising for manual transfer 
+2017-07-16 01:36:29,401 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:36:29,402 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:36:29,403 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:36:29,839 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:36:29,912 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:36:29,924 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:36:30,730 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:36:30,731 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:36:30,899 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:36:30,899 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:36:30,900 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:36:30,904 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:36:30,905 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-16 01:36:30,905 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-16 01:36:30,905 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-16 01:36:30,905 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-16 01:36:30,918 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-merchant@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-16 01:36:30,919 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-16 01:36:30,919 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AVrERsASg2y9aH6mByjjrrKDqclZnvcnvawxEvVqDIbDztyVJo7pXLKQuV_PfKR1V_m3Rwp_VeG_w29j 
+2017-07-16 01:36:30,920 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9 
+2017-07-16 01:36:30,921 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AVrERsASg2y9aH6mByjjrrKDqclZnvcnvawxEvVqDIbDztyVJo7pXLKQuV_PfKR1V_m3Rwp_VeG_w29j",
+  "secret" : "EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9"
+} 
+2017-07-16 01:36:31,810 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAElKLr1tIF6gNUfZ9DtQ3U9SVJKkHTjfIWOXVuisH3Kxi4bhJ_M4Jb_ZKkrGO8vOXndRQ0km4Cahk5NYe_qVv3KZa9kgw 
+2017-07-16 01:36:31,813 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-16 01:36:31,824 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-16 01:36:31,825 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@7e057f43] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c284af] 
+2017-07-16 01:36:32,691 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 422 (Unprocessable Entity); invoking error handler 
+2017-07-16 01:36:32,697 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-16 01:36:32,699 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"INSUFFICIENT_FUNDS\",\"message\":\"An internal service error has occurred.\",\"debug_id\":\"8b7be858cb0fc\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Unprocessable Entity",
+    "details" : null
+  }
+} 
+2017-07-16 01:36:32,700 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"INSUFFICIENT_FUNDS\",\"message\":\"An internal service error has occurred.\",\"debug_id\":\"8b7be858cb0fc\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Unprocessable Entity",
+    "details" : null
+  }
+} 
+2017-07-16 01:36:32,700 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-16 01:51:21,624 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:51:21,625 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:51:21,627 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:51:22,124 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:51:22,205 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:51:22,216 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:51:23,019 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:51:23,019 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:51:23,230 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:51:23,230 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:51:23,231 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:51:23,235 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-16 01:51:23,236 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-16 01:51:23,236 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-16 01:51:23,236 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-16 01:51:23,236 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-16 01:51:23,249 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "deepak.pokhrel132-buyer@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-16 01:51:23,249 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-16 01:51:23,250 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-16 01:51:23,250 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-16 01:51:23,251 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-16 01:51:24,161 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAEyK1f0qb7m45R8OkNj8P5ogg3w87T73zMPvwvXIBjVVVFGfh0gpAWFN11UGwxQJdQjF83AvwMUISZBATvFM5p9OjrZmg 
+2017-07-16 01:51:24,164 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-16 01:51:24,174 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-16 01:51:24,175 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@7e057f43] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c284af] 
+2017-07-16 01:51:25,414 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-16 01:51:25,414 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c284af] 
+2017-07-16 01:51:25,419 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "C4ULY348S78PQ",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "63",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-16 01:51:25,422 INFO   [PrettyPrinterJson] {
+  "batch_header" : {
+    "payout_batch_id" : "C4ULY348S78PQ",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "63",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-16 01:51:25,422 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Payment was successfully completed. No action is needed 
+2017-07-16 01:52:37,900 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-16 01:52:37,900 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-16 01:52:37,901 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-16 01:52:38,284 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-16 01:52:38,355 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-16 01:52:38,368 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:52:39,125 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-16 01:52:39,125 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-16 01:52:39,283 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-16 01:52:39,283 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-16 01:52:39,283 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-16 01:52:39,287 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null.No balance transfered. Something went wrong. Please check Pyadvertising for manual transfer 
+2017-07-18 01:38:09,222 INFO   [OrderConfirmationAndPaymentController] decrypted spotID� 
+2017-07-18 01:38:09,230 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 01:38:09,231 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend � 
+2017-07-18 01:38:09,233 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:38:09,807 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 01:38:09,908 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:38:09,918 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:38:10,323 WARN   [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 500 (null); invoking error handler 
+2017-07-18 01:38:10,327 DEBUG  [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@7bc1a03d 
+2017-07-18 01:38:10,328 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is null 
+2017-07-18 01:39:12,819 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-18 01:39:12,820 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 01:39:12,820 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-18 01:39:12,821 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:39:13,230 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 01:39:13,308 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:39:13,317 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:39:14,474 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 01:39:14,475 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:39:14,645 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 01:39:14,645 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 01:39:14,646 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 01:39:14,650 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-18 01:42:24,144 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-18 01:42:24,145 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 01:42:24,145 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-18 01:42:24,146 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:42:24,616 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 01:42:24,692 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:42:24,701 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:42:25,459 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 01:42:25,459 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:42:25,630 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 01:42:25,631 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 01:42:25,631 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 01:42:25,635 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 01:42:25,636 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-18 01:42:25,636 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-18 01:42:25,636 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-18 01:42:25,636 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-18 01:42:25,650 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "deepak.pokhrel132-buyer@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-18 01:42:25,651 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-18 01:42:25,651 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-18 01:42:25,652 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-18 01:42:25,653 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-18 01:42:26,924 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAE0ERwgi95dMtH4aS_u4iiXARloGX0ITeueTrrBNXWrzJT18682_WSPO1aGFUdwxxSPO6aBOgKRYrlzYkupGP3M3tZlvQ 
+2017-07-18 01:42:26,929 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-18 01:42:26,942 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-18 01:42:26,943 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 01:42:27,422 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-18 01:42:27,426 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-18 01:42:27,428 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"29f30c1c2e944\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-18 01:42:27,431 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"29f30c1c2e944\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-18 01:42:27,431 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-18 01:46:31,986 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-18 01:46:31,987 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 01:46:31,987 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-18 01:46:31,988 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:46:32,406 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 01:46:32,488 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:46:32,500 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:46:33,262 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 01:46:33,262 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 01:46:33,423 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 01:46:33,424 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 01:46:33,424 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 01:46:33,428 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 01:46:33,429 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-18 01:46:33,429 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-18 01:46:33,429 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-18 01:46:33,429 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-18 01:46:33,443 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "deepak.pokhrel132-buyer@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number62",
+    "sender_item_id" : "62",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-18 01:46:33,444 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-18 01:46:33,444 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-18 01:46:33,444 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-18 01:46:33,446 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-18 01:46:34,209 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAE0ERwgi95dMtH4aS_u4iiXARloGX0ITeueTrrBNXWrzJT18682_WSPO1aGFUdwxxSPO6aBOgKRYrlzYkupGP3M3tZlvQ 
+2017-07-18 01:46:34,212 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-18 01:46:34,223 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-18 01:46:34,224 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 01:46:35,324 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-18 01:46:35,324 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 01:46:35,329 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "BK4JHA8UG6DKW",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "62",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-18 01:46:35,331 INFO   [PrettyPrinterJson] {
+  "batch_header" : {
+    "payout_batch_id" : "BK4JHA8UG6DKW",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "62",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-18 01:46:35,335 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:46:35,336 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 01:46:35,337 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:46:35,345 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 01:46:35,347 DEBUG  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 01:46:35,348 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Error occured no balance was transfered. Please, contact PyAdvertising 
+2017-07-18 01:50:27,500 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:50:27,579 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 01:50:27,598 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:50:27,633 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 01:54:29,484 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:54:29,574 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 01:54:29,594 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:54:29,626 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 01:56:12,336 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 01:56:12,422 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 01:56:12,448 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 01:56:12,492 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:00:39,182 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:00:39,265 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:00:39,291 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:00:39,322 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:02:15,331 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:02:15,406 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:02:15,423 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:02:15,455 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:02:15,459 INFO   [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@2f0a87b3 
+2017-07-18 02:02:44,391 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:02:44,469 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:02:44,489 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:02:44,517 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:02:44,521 INFO   [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@2f0a87b3 
+2017-07-18 02:03:21,678 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:03:21,757 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:03:21,775 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:03:21,796 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:03:21,800 INFO   [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@2f0a87b3 
+2017-07-18 02:03:40,797 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:03:40,886 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:03:40,904 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:03:40,943 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:03:40,953 INFO   [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@2f0a87b3 
+2017-07-18 02:04:11,007 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:04:11,089 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:04:11,108 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:04:11,141 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:04:11,145 ERROR  [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@2f0a87b3 
+2017-07-18 02:04:44,891 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:04:44,968 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:04:44,988 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:04:45,012 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:04:45,015 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:05:34,396 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:05:34,487 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:05:34,508 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:05:34,536 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:05:34,540 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:05:53,379 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:05:53,450 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:05:53,475 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:05:53,499 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:05:53,503 ERROR  [OrderConfirmationAndPaymentController]  
+2017-07-18 02:06:03,203 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:06:03,276 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:06:03,294 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:06:03,318 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:06:03,322 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:10:00,011 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:10:00,099 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:10:00,115 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:10:00,132 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6483f5ae] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@b9afc07] 
+2017-07-18 02:10:00,166 WARN   [RestTemplate] POST request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:10:00,170 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:18:36,094 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:18:36,173 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:18:36,193 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:18:36,216 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6483f5ae] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@b9afc07] 
+2017-07-18 02:18:36,296 WARN   [RestTemplate] POST request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:18:36,300 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:19:23,967 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:19:23,979 INFO   [OrderConfirmationAndPaymentController] http://localhost:8080 
+2017-07-18 02:19:24,039 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080" 
+2017-07-18 02:19:24,059 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:19:24,937 DEBUG  [RestTemplate] GET request for "http://localhost:8080" resulted in 200 (null) 
+2017-07-18 02:20:49,804 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:20:49,815 INFO   [OrderConfirmationAndPaymentController] Built url is http://localhost:8080 
+2017-07-18 02:20:49,871 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080" 
+2017-07-18 02:20:49,885 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:20:49,913 DEBUG  [RestTemplate] GET request for "http://localhost:8080" resulted in 200 (null) 
+2017-07-18 02:22:34,282 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:22:34,631 INFO   [OrderConfirmationAndPaymentController] Built url is http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id 
+2017-07-18 02:22:34,694 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" 
+2017-07-18 02:22:34,713 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:22:34,735 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id" resulted in 404 (null); invoking error handler 
+2017-07-18 02:22:34,739 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:24:29,297 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:24:29,684 INFO   [OrderConfirmationAndPaymentController] Built url is http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id?spotid=62 
+2017-07-18 02:24:29,746 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id?spotid=62" 
+2017-07-18 02:24:29,764 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:24:29,789 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdplacer-ApiServices/insert-paymentinfo-tvspot/by-spot-id?spotid=62" resulted in 404 (null); invoking error handler 
+2017-07-18 02:24:29,793 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:53:51,250 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:53:51,629 INFO   [OrderConfirmationAndPaymentController] Built url is http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order?spotId=62 
+2017-07-18 02:53:51,699 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order?spotId=62" 
+2017-07-18 02:53:51,714 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:53:51,752 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order?spotId=62" resulted in 404 (null); invoking error handler 
+2017-07-18 02:53:51,758 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 02:55:01,196 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 02:55:01,622 INFO   [OrderConfirmationAndPaymentController] Built url is http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order 
+2017-07-18 02:55:01,679 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order" 
+2017-07-18 02:55:01,700 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 02:55:01,727 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order" resulted in 404 (null); invoking error handler 
+2017-07-18 02:55:01,731 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 03:02:54,573 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:02:55,078 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order" 
+2017-07-18 03:02:55,093 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:02:55,116 WARN   [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order" resulted in 404 (null); invoking error handler 
+2017-07-18 03:02:55,121 ERROR  [OrderConfirmationAndPaymentController] org.springframework.web.client.HttpClientErrorException: 404 null 
+2017-07-18 03:03:21,364 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:03:21,826 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" 
+2017-07-18 03:03:21,844 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:03:22,275 DEBUG  [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" resulted in 200 (null) 
+2017-07-18 03:03:22,277 DEBUG  [RestTemplate] Reading [class java.lang.Boolean] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@481a15ff] 
+2017-07-18 03:03:22,293 INFO   [OrderConfirmationAndPaymentController] Payment for OrderId 62saved. Is payment saved (must Be true) ?true 
+2017-07-18 03:04:05,219 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:04:05,677 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" 
+2017-07-18 03:04:05,694 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:04:06,046 DEBUG  [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" resulted in 200 (null) 
+2017-07-18 03:04:06,048 DEBUG  [RestTemplate] Reading [class java.lang.Boolean] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@481a15ff] 
+2017-07-18 03:04:06,061 INFO   [OrderConfirmationAndPaymentController] Payment for OrderId 62saved. Is payment saved (must Be true) ?true 
+2017-07-18 03:07:17,965 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-18 03:07:17,966 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 03:07:17,966 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-18 03:07:17,968 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:07:18,398 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 03:07:18,495 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:07:18,504 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:07:19,750 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 03:07:19,750 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:07:19,939 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 03:07:19,939 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 03:07:19,940 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 03:07:19,944 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 03:07:19,945 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-18 03:07:19,945 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-18 03:07:19,945 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-18 03:07:19,945 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-18 03:07:19,962 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "deepak.pokhrel132-buyer@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-18 03:07:19,962 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-18 03:07:19,963 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-18 03:07:19,963 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-18 03:07:19,964 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-18 03:07:21,163 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAFKQkJotJ_PRUI-MWsYhrhpAQQfYxnBQyICueNCJB-K-_e-K_qsesn8m1qC7idCU-KcE1yDPSJdNlQc-R9yAf8R8NZR7A 
+2017-07-18 03:07:21,166 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-18 03:07:21,178 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-18 03:07:21,179 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 03:07:21,756 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-18 03:07:21,759 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-18 03:07:21,762 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"6f2a58a16b087\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-18 03:07:21,764 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"6f2a58a16b087\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-18 03:07:21,764 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-18 03:08:47,278 INFO   [OrderConfirmationAndPaymentController] decrypted spotID81 
+2017-07-18 03:08:47,279 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 03:08:47,279 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 81 
+2017-07-18 03:08:47,280 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:08:47,750 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 03:08:47,836 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:08:47,847 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:08:48,703 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 03:08:48,704 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:08:48,905 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 03:08:48,905 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 03:08:48,906 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 03:08:48,910 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 03:08:48,910 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-18 03:10:17,372 INFO   [OrderConfirmationAndPaymentController] decrypted spotID50 
+2017-07-18 03:10:17,373 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 03:10:17,373 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 50 
+2017-07-18 03:10:17,375 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:10:17,809 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 03:10:17,880 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:10:17,889 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:10:18,654 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 03:10:18,655 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:10:18,831 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 50,
+    "startDate" : "2017-05-24",
+    "endDate" : "2017-06-23",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Coeymans Hollow", "Coxsackie", "S Cairo", "Maplecrest", "Ravena", "Earlton", "Rensselaerville", "Climax", "W Coxsackie", "Westerlo", "Philmont", "Leeds", "Greenville", "Hudson", "Athens", "Surprise", "Copake", "Berne", "Claverack", "Durham", "Elizaville", "Hollowville", "Stotville", "Windham", "Stuyvesant", "Columbiaville", "Mellenville", "Craryville", "Germantown", "Ghent", "New Baltimore", "Hannacroix", "Greenport", "Prattsville", "Oak Hill", "Ashland", "Coeymans", "Hensonville", "Stockport", "S Westerlo", "E Durham", "Roxbury", "Livingston", "Linlithgo", "Alcove", "Acra", "Preston Hollow", "Purling", "Selkirk", "Medusa", "Palenville", "Cairo", "Cornwallville", "Freehold", "Catskill", "Roundtop" ],
+    "cableHeadEnd" : "Green, Columbia, and Albany ",
+    "company" : "Mid-Hudson Cablevision",
+    "spotName" : "4aklh9ca9pngb6d4p4qo8sshcs.mp4",
+    "videoId" : 50,
+    "price" : 0.01,
+    "channelOrdered" : "CMD",
+    "playType" : "6am-12pm",
+    "unitCost" : 9.5,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 03:10:18,831 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 03:10:18,831 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-18 03:10:18,836 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 03:10:18,837 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is .01 out of .01 and commision of 10% to pyAdvertising is .00 
+2017-07-18 03:10:18,837 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-18 03:10:18,838 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is .01 
+2017-07-18 03:10:18,838 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .00 
+2017-07-18 03:10:18,855 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "50",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 50"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".01",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 50",
+    "sender_item_id" : "50",
+    "receiver" : "deepak.pokhrel132-buyer@gmail.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number50",
+    "sender_item_id" : "50",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-18 03:10:18,856 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-18 03:10:18,856 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-18 03:10:18,857 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-18 03:10:18,858 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-18 03:10:19,621 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAFKQkJotJ_PRUI-MWsYhrhpAQQfYxnBQyICueNCJB-K-_e-K_qsesn8m1qC7idCU-KcE1yDPSJdNlQc-R9yAf8R8NZR7A 
+2017-07-18 03:10:19,625 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-18 03:10:19,637 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-18 03:10:19,638 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 03:10:21,162 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-18 03:10:21,163 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 03:10:21,168 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "SVBGVAP6BGGQY",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "50",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 50"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/SVBGVAP6BGGQY",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-18 03:10:21,172 INFO   [PrettyPrinterJson] {
+  "batch_header" : {
+    "payout_batch_id" : "SVBGVAP6BGGQY",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "50",
+      "email_subject" : "PyAdvertising Invoice Payment for Order Number 50"
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/SVBGVAP6BGGQY",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-18 03:10:21,172 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:10:21,177 DEBUG  [RestTemplate] Created GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/50" 
+2017-07-18 03:10:21,178 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:10:21,524 DEBUG  [RestTemplate] GET request for "http://localhost:8080/RoboAdPlacer-ApiServices/insertpayment/order/50" resulted in 200 (null) 
+2017-07-18 03:10:21,524 DEBUG  [RestTemplate] Reading [class java.lang.Boolean] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4d15107f] 
+2017-07-18 03:10:21,526 INFO   [OrderConfirmationAndPaymentController] Payment for OrderId 50 is saved. Is payment saved (must Be true) ? true 
+2017-07-18 03:10:21,526 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Payment was successfully completed. No action is needed 
+2017-07-18 03:34:39,837 INFO   [OrderConfirmationAndPaymentController] decrypted spotID50 
+2017-07-18 03:34:39,841 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 03:34:39,841 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 50 
+2017-07-18 03:34:39,846 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 03:34:40,776 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 03:34:40,970 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 03:34:40,990 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:34:43,077 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 03:34:43,078 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 03:34:43,490 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 50,
+    "startDate" : "2017-05-24",
+    "endDate" : "2017-06-23",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Coeymans Hollow", "Coxsackie", "S Cairo", "Maplecrest", "Ravena", "Earlton", "Rensselaerville", "Climax", "W Coxsackie", "Westerlo", "Philmont", "Leeds", "Greenville", "Hudson", "Athens", "Surprise", "Copake", "Berne", "Claverack", "Durham", "Elizaville", "Hollowville", "Stotville", "Windham", "Stuyvesant", "Columbiaville", "Mellenville", "Craryville", "Germantown", "Ghent", "New Baltimore", "Hannacroix", "Greenport", "Prattsville", "Oak Hill", "Ashland", "Coeymans", "Hensonville", "Stockport", "S Westerlo", "E Durham", "Roxbury", "Livingston", "Linlithgo", "Alcove", "Acra", "Preston Hollow", "Purling", "Selkirk", "Medusa", "Palenville", "Cairo", "Cornwallville", "Freehold", "Catskill", "Roundtop" ],
+    "cableHeadEnd" : "Green, Columbia, and Albany ",
+    "company" : "Mid-Hudson Cablevision",
+    "spotName" : "4aklh9ca9pngb6d4p4qo8sshcs.mp4",
+    "videoId" : 50,
+    "price" : 0.01,
+    "channelOrdered" : "CMD",
+    "playType" : "6am-12pm",
+    "unitCost" : 9.5,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : true,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 03:34:43,500 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is The payment to this order id is already completed.s 
+2017-07-18 18:37:23,622 INFO   [OrderConfirmationAndPaymentController] decrypted spotID50 
+2017-07-18 18:37:23,624 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 18:37:23,625 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 50 
+2017-07-18 18:37:23,627 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 18:37:24,372 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 18:37:24,469 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 18:37:24,491 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 18:37:26,477 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 18:37:26,478 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 18:37:26,694 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 50,
+    "startDate" : "2017-05-24",
+    "endDate" : "2017-06-23",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Coeymans Hollow", "Coxsackie", "S Cairo", "Maplecrest", "Ravena", "Earlton", "Rensselaerville", "Climax", "W Coxsackie", "Westerlo", "Philmont", "Leeds", "Greenville", "Hudson", "Athens", "Surprise", "Copake", "Berne", "Claverack", "Durham", "Elizaville", "Hollowville", "Stotville", "Windham", "Stuyvesant", "Columbiaville", "Mellenville", "Craryville", "Germantown", "Ghent", "New Baltimore", "Hannacroix", "Greenport", "Prattsville", "Oak Hill", "Ashland", "Coeymans", "Hensonville", "Stockport", "S Westerlo", "E Durham", "Roxbury", "Livingston", "Linlithgo", "Alcove", "Acra", "Preston Hollow", "Purling", "Selkirk", "Medusa", "Palenville", "Cairo", "Cornwallville", "Freehold", "Catskill", "Roundtop" ],
+    "cableHeadEnd" : "Green, Columbia, and Albany ",
+    "company" : "Mid-Hudson Cablevision",
+    "spotName" : "4aklh9ca9pngb6d4p4qo8sshcs.mp4",
+    "videoId" : 50,
+    "price" : 0.01,
+    "channelOrdered" : "CMD",
+    "playType" : "6am-12pm",
+    "unitCost" : 9.5,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : true,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 18:37:26,700 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is The payment to this order id is already completed. 
+2017-07-18 18:38:33,270 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-18 18:38:33,271 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-18 18:38:33,271 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-18 18:38:33,272 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-18 18:38:33,989 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-18 18:38:34,124 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-18 18:38:34,138 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 18:38:34,975 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-18 18:38:34,975 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-18 18:38:35,258 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-18 18:38:35,258 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-18 18:38:35,259 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-18 18:38:35,264 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-18 18:38:35,265 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10% to pyAdvertising is .36 
+2017-07-18 18:38:35,265 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-18 18:38:35,265 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-18 18:38:35,265 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-18 18:38:35,284 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-18 18:38:35,284 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-18 18:38:35,286 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-18 18:38:35,287 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-18 18:38:35,289 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-18 18:38:36,670 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAEjjgbumd3PhFArhncJnZ0ZHJM8VZyT0SQvwk7ZTRWH54jUpi0JlF8HTUHbh9NYaFPrca70pWUMQxDni2m630TjhKKR3A 
+2017-07-18 18:38:36,673 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-18 18:38:36,685 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-18 18:38:36,686 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-18 18:38:37,204 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-18 18:38:37,208 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-18 18:38:37,210 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"331f49d8eeb66\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-18 18:38:37,212 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"331f49d8eeb66\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-18 18:38:37,212 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-19 17:38:46,852 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-19 17:38:46,854 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-19 17:38:46,854 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-19 17:38:46,856 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-19 17:38:47,470 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-19 17:38:47,585 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-19 17:38:47,599 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-19 17:38:48,946 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-19 17:38:48,947 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-19 17:38:49,186 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-19 17:38:49,186 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-19 17:38:49,187 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-19 17:38:49,191 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-19 17:38:49,192 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-19 17:38:49,192 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-19 17:38:49,192 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-19 17:38:49,192 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-19 17:38:49,207 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-19 17:38:49,207 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-19 17:38:49,208 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-19 17:38:49,208 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-19 17:38:49,210 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-19 17:38:50,481 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAF7qgQQiqACKBUv7LUYi3OD5Loh-EZAIVpC8vFBjh57iwXSXhQ8NYNJ-o9EbgckUziRgKwj7usyskrlP9ZOGJpUeaH82Q 
+2017-07-19 17:38:50,485 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-19 17:38:50,495 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-19 17:38:50,496 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-19 17:38:51,046 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-19 17:38:51,050 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-19 17:38:51,053 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"4d91b6e8b16ef\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-19 17:38:51,055 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"4d91b6e8b16ef\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-19 17:38:51,055 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-20 22:07:57,854 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-20 22:07:57,855 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-20 22:07:57,855 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-20 22:07:57,857 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-20 22:07:58,424 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-20 22:07:58,534 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-20 22:07:58,547 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-20 22:07:59,513 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-20 22:07:59,513 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-20 22:07:59,732 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-20 22:07:59,732 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-20 22:07:59,733 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-20 22:07:59,737 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-20 22:07:59,738 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-20 22:07:59,738 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-20 22:07:59,738 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-20 22:07:59,738 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-20 22:07:59,754 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-20 22:07:59,755 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-20 22:07:59,755 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-20 22:07:59,756 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-20 22:07:59,757 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-20 22:08:01,003 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAF6CGYvp3_qhkaZxwz4Yk1Sx5_26xAl_vTbEnldL1VSKL0G4gP4t9uB8HKAFJQoMmiRW7W3wlYpynr2uJ_4vAdWF9Cydg 
+2017-07-20 22:08:01,007 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-20 22:08:01,016 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-20 22:08:01,017 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-20 22:08:01,589 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-20 22:08:01,592 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-20 22:08:01,593 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"1f98e6fdd987\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-20 22:08:01,595 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"1f98e6fdd987\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-20 22:08:01,595 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-21 19:08:54,512 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-21 19:08:54,514 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-21 19:08:54,514 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-21 19:08:54,517 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-21 19:08:55,076 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-21 19:08:55,162 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-21 19:08:55,174 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-21 19:08:56,160 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-21 19:08:56,160 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-21 19:08:56,363 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-21 19:08:56,363 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-21 19:08:56,363 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-21 19:08:56,367 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-21 19:08:56,368 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-21 19:08:56,368 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-21 19:08:56,368 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-21 19:08:56,368 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-21 19:08:56,382 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-21 19:08:56,383 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-21 19:08:56,383 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-21 19:08:56,384 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-21 19:08:56,385 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-21 19:08:57,646 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAEX1ECtk3AzEgoeNbv7bHb_A6QuRjULNT_JE5w4GmjaHUyuelcxx0heMlb3mye9D39mVOSAirQk_Ser8ZU8t8LKfERxHg 
+2017-07-21 19:08:57,650 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-21 19:08:57,659 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-21 19:08:57,660 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-21 19:08:58,182 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-21 19:08:58,186 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-21 19:08:58,188 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"bbce4f8be40aa\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-21 19:08:58,189 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"bbce4f8be40aa\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-21 19:08:58,189 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-22 12:57:32,422 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-22 12:57:32,423 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-22 12:57:32,423 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-22 12:57:32,426 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-22 12:57:32,931 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-22 12:57:33,015 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-22 12:57:33,027 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 12:57:33,824 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-22 12:57:33,824 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 12:57:34,029 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-22 12:57:34,029 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-22 12:57:34,030 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-22 12:57:34,034 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-22 12:57:34,035 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-22 12:57:34,035 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-22 12:57:34,035 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-22 12:57:34,035 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-22 12:57:34,052 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-22 12:57:34,052 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-22 12:57:34,053 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-22 12:57:34,053 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-22 12:57:34,056 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-22 12:57:35,199 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAGHp3MkvtPcOW0xk_AaNtfBLfsXiMdHt1_73L1pJ08xIHiHOWUhiwL5JqIwUoKMvfYDjtF1ZZ7vJiaUDGXppycupFBusQ 
+2017-07-22 12:57:35,202 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-22 12:57:35,213 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-22 12:57:35,215 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-22 12:57:35,708 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-22 12:57:35,712 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-22 12:57:35,714 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"73377aeb6d089\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-22 12:57:35,716 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"73377aeb6d089\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-22 12:57:35,716 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-22 22:08:25,011 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-22 22:08:25,012 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-22 22:08:25,012 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-22 22:08:25,014 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-22 22:08:25,527 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-22 22:08:25,605 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-22 22:08:25,614 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:08:26,405 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-22 22:08:26,406 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:08:26,597 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-22 22:08:26,597 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-22 22:08:26,598 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-22 22:08:26,602 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-22 22:08:26,603 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-22 22:08:26,603 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-22 22:08:26,603 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-22 22:08:26,603 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-22 22:08:26,617 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-22 22:08:26,618 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-22 22:08:26,618 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq 
+2017-07-22 22:08:26,619 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O 
+2017-07-22 22:08:26,620 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWRPZbS67qOcKFcEkwDBVwLh89DXpexq_cBcwtz3zjPDaUmKYoe6wgnYNuxiYCGoR1Aa8jcilOANCimq",
+  "secret" : "EHkZypC5UrFTLe8HjL6HUEcO3JKSd97UPSET3JRPVckisxEw2Utw6hCQx3WQiNGcZFJfYWyqTxvByK9O"
+} 
+2017-07-22 22:08:27,716 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAEN8v1BoqaLoweMj_xo332ZyNgypqf74G75xxuQwFxGhriubFn0EQDov4xYb-EokDjoJ-1gZRAlb2324J8oq5pbx5bTWQ 
+2017-07-22 22:08:27,720 DEBUG  [RestTemplate] Created POST request for "https://api.paypal.com/v1/payments/payouts" 
+2017-07-22 22:08:27,732 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-22 22:08:27,733 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-22 22:08:28,344 WARN   [RestTemplate] POST request for "https://api.paypal.com/v1/payments/payouts" resulted in 403 (Forbidden); invoking error handler 
+2017-07-22 22:08:28,346 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-22 22:08:28,348 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"b64cc2ca1d2ca\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-22 22:08:28,350 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"AUTHORIZATION_ERROR\",\"message\":\"Authorization error occurred\",\"debug_id\":\"b64cc2ca1d2ca\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\"}",
+    "information_link" : "Forbidden",
+    "details" : null
+  }
+} 
+2017-07-22 22:08:28,350 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-22 22:09:15,734 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-22 22:09:15,735 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-22 22:09:15,735 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-22 22:09:15,737 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-22 22:09:16,238 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-22 22:09:16,338 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-22 22:09:16,349 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:09:17,150 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-22 22:09:17,151 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:09:17,342 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-22 22:09:17,343 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-22 22:09:17,343 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-22 22:09:17,347 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-22 22:09:17,348 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10% to pyAdvertising is .36 
+2017-07-22 22:09:17,348 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-22 22:09:17,348 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-22 22:09:17,348 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-22 22:09:17,362 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-22 22:09:17,363 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-22 22:09:17,363 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-22 22:09:17,364 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-22 22:09:17,365 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-22 22:09:18,546 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH7EZdDpj0vlJr3M6Rg9oT4EZpwRXqlRhlbLmlvFqXRAOMsJnDUKir_0cGOS4xSvqw9oENodwVInLrbDHjcskIQa7RmfQ 
+2017-07-22 22:09:18,549 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-22 22:09:18,562 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-22 22:09:18,563 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-22 22:09:19,049 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-22 22:09:19,052 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-22 22:09:19,054 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"abde37f5dc5ea\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-22 22:09:19,056 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"abde37f5dc5ea\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-22 22:09:19,056 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-22 22:11:15,342 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-22 22:11:15,343 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-22 22:11:15,343 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-22 22:11:15,345 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-22 22:11:15,800 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-22 22:11:15,897 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-22 22:11:15,908 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:11:16,681 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-22 22:11:16,681 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:11:16,862 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-22 22:11:16,863 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-22 22:11:16,863 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-22 22:11:16,867 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-22 22:11:16,868 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10% to pyAdvertising is 45.00 
+2017-07-22 22:11:16,868 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config roboad-personal@gmail.com 
+2017-07-22 22:11:16,868 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-22 22:11:16,868 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-22 22:11:16,881 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "payment@pyadvertising.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "roboad-personal@gmail.com"
+  } ]
+} 
+2017-07-22 22:11:16,881 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-22 22:11:16,882 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-22 22:11:16,882 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-22 22:11:16,884 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-22 22:11:17,789 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH7EZdDpj0vlJr3M6Rg9oT4EZpwRXqlRhlbLmlvFqXRAOMsJnDUKir_0cGOS4xSvqw9oENodwVInLrbDHjcskIQa7RmfQ 
+2017-07-22 22:11:17,793 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-22 22:11:17,804 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-22 22:11:17,805 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-22 22:11:18,261 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-22 22:11:18,264 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-22 22:11:18,266 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"47f7e3632034d\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-22 22:11:18,268 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"47f7e3632034d\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-22 22:11:18,268 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-22 22:11:38,954 INFO   [OrderConfirmationAndPaymentController] decrypted spotID64 
+2017-07-22 22:11:38,955 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-22 22:11:38,955 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 64 
+2017-07-22 22:11:38,956 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080 
+2017-07-22 22:11:39,402 DEBUG  [RestTemplate] Created POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-22 22:11:39,492 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-22 22:11:39,503 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:11:40,314 DEBUG  [RestTemplate] POST request for "http://localhost:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (null) 
+2017-07-22 22:11:40,314 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-22 22:11:40,496 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-22 22:11:40,496 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is null 
+2017-07-22 22:11:40,496 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is roboad-personal@gmail.com 
+2017-07-22 22:11:40,501 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10 
+2017-07-22 22:11:40,501 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 16:56:01,169 INFO   [OrderConfirmationAndPaymentController] decrypted spotID64 
+2017-07-23 16:56:01,171 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 16:56:01,171 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 64 
+2017-07-23 16:56:01,172 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 16:56:01,583 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 16:56:01,660 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 16:56:01,671 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:56:01,849 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 16:56:01,849 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:56:02,032 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 16:56:02,036 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 16:57:21,510 INFO   [OrderConfirmationAndPaymentController] decrypted spotID27 
+2017-07-23 16:57:21,512 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 16:57:21,512 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 27 
+2017-07-23 16:57:21,513 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 16:57:21,886 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 16:57:21,966 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 16:57:21,976 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:57:22,079 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 16:57:22,080 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:57:22,274 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 27,
+    "startDate" : "2017-05-22",
+    "endDate" : "2017-06-21",
+    "monday" : "4",
+    "tuesday" : "4",
+    "wednesday" : "4",
+    "thrusday" : "4",
+    "friday" : "4",
+    "saturday" : "4",
+    "sunday" : "4",
+    "cities" : [ "Coeymans Hollow", "Coxsackie", "S Cairo", "Maplecrest", "Ravena", "Earlton", "Rensselaerville", "Climax", "W Coxsackie", "Westerlo", "Philmont", "Leeds", "Greenville", "Hudson", "Athens", "Surprise", "Copake", "Berne", "Claverack", "Durham", "Elizaville", "Hollowville", "Stotville", "Windham", "Stuyvesant", "Columbiaville", "Mellenville", "Craryville", "Germantown", "Ghent", "New Baltimore", "Hannacroix", "Greenport", "Prattsville", "Oak Hill", "Ashland", "Coeymans", "Hensonville", "Stockport", "S Westerlo", "E Durham", "Roxbury", "Livingston", "Linlithgo", "Alcove", "Acra", "Preston Hollow", "Purling", "Selkirk", "Medusa", "Palenville", "Cairo", "Cornwallville", "Freehold", "Catskill", "Roundtop" ],
+    "cableHeadEnd" : "Green, Columbia, and Albany ",
+    "company" : "Mid-Hudson Cablevision",
+    "spotName" : "ou3ib1stns9l1ija5a8nr9n6nu.html",
+    "videoId" : 27,
+    "price" : 0.01,
+    "channelOrdered" : "AEN",
+    "playType" : "6am-12pm",
+    "unitCost" : 12.0,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 16:57:22,279 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 16:58:09,972 INFO   [OrderConfirmationAndPaymentController] decrypted spotID28 
+2017-07-23 16:58:09,973 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 16:58:09,974 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 28 
+2017-07-23 16:58:09,975 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 16:58:10,381 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 16:58:10,453 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 16:58:10,463 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:58:10,541 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 16:58:10,541 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 16:58:10,727 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 28,
+    "startDate" : "2017-05-22",
+    "endDate" : "2017-06-21",
+    "monday" : "4",
+    "tuesday" : "4",
+    "wednesday" : "4",
+    "thrusday" : "4",
+    "friday" : "4",
+    "saturday" : "4",
+    "sunday" : "4",
+    "cities" : [ "Coeymans Hollow", "Coxsackie", "S Cairo", "Maplecrest", "Ravena", "Earlton", "Rensselaerville", "Climax", "W Coxsackie", "Westerlo", "Philmont", "Leeds", "Greenville", "Hudson", "Athens", "Surprise", "Copake", "Berne", "Claverack", "Durham", "Elizaville", "Hollowville", "Stotville", "Windham", "Stuyvesant", "Columbiaville", "Mellenville", "Craryville", "Germantown", "Ghent", "New Baltimore", "Hannacroix", "Greenport", "Prattsville", "Oak Hill", "Ashland", "Coeymans", "Hensonville", "Stockport", "S Westerlo", "E Durham", "Roxbury", "Livingston", "Linlithgo", "Alcove", "Acra", "Preston Hollow", "Purling", "Selkirk", "Medusa", "Palenville", "Cairo", "Cornwallville", "Freehold", "Catskill", "Roundtop" ],
+    "cableHeadEnd" : "Green, Columbia, and Albany ",
+    "company" : "Mid-Hudson Cablevision",
+    "spotName" : "egc36h5gtlqq9po1tn0cdaamqd.html",
+    "videoId" : 28,
+    "price" : 0.01,
+    "channelOrdered" : "AEN",
+    "playType" : "6am-12pm",
+    "unitCost" : 12.0,
+    "email" : "deepak.pokhrel@hotmail.com",
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 16:58:10,732 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:01:34,437 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-23 17:01:34,438 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:01:34,438 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-23 17:01:34,440 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:01:34,857 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:01:34,929 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:01:34,942 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:01:35,014 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:01:35,015 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:01:35,233 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-23 17:01:35,233 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is spyburn@cabletvadsamerica.com 
+2017-07-23 17:01:35,233 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-23 17:01:35,237 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-23 17:01:35,238 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10.0% to pyAdvertising is 45.00 
+2017-07-23 17:01:35,238 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-23 17:01:35,238 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-23 17:01:35,238 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-23 17:01:35,251 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "spyburn@cabletvadsamerica.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-23 17:01:35,252 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.paypal.com/ 
+2017-07-23 17:01:35,252 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-23 17:01:35,252 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9 
+2017-07-23 17:01:35,254 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9"
+} 
+2017-07-23 17:01:36,158 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "com.paypal.core.rest.PayPalRESTException: Error code : 401 with response : {\"error\":\"invalid_client\",\"error_description\":\"Client Authentication failed\"}",
+    "information_link" : null,
+    "details" : null
+  }
+} 
+2017-07-23 17:01:36,160 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "com.paypal.core.rest.PayPalRESTException: Error code : 401 with response : {\"error\":\"invalid_client\",\"error_description\":\"Client Authentication failed\"}",
+    "information_link" : null,
+    "details" : null
+  }
+} 
+2017-07-23 17:01:36,160 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-23 17:02:29,047 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-23 17:02:29,048 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:02:29,049 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-23 17:02:29,050 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:02:29,425 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:02:29,497 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:02:29,507 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:02:29,579 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:02:29,580 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:02:29,762 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-23 17:02:29,762 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is spyburn@cabletvadsamerica.com 
+2017-07-23 17:02:29,763 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-23 17:02:29,767 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-23 17:02:29,768 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10.0% to pyAdvertising is 45.00 
+2017-07-23 17:02:29,768 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-23 17:02:29,768 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-23 17:02:29,768 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-23 17:02:29,781 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "spyburn@cabletvadsamerica.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-23 17:02:29,781 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-23 17:02:29,781 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-23 17:02:29,782 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9 
+2017-07-23 17:02:29,784 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EJlYJeTTftbyY8phmxfCKLnTvDS3RKvR00200T55eXJ8LGVYUrDkjSsuyhiul2bfCXJ8SoRF4W7Jbfo9"
+} 
+2017-07-23 17:02:30,822 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "com.paypal.core.rest.PayPalRESTException: Error code : 401 with response : {\"error\":\"invalid_client\",\"error_description\":\"Client Authentication failed\"}",
+    "information_link" : null,
+    "details" : null
+  }
+} 
+2017-07-23 17:02:30,826 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "com.paypal.core.rest.PayPalRESTException: Error code : 401 with response : {\"error\":\"invalid_client\",\"error_description\":\"Client Authentication failed\"}",
+    "information_link" : null,
+    "details" : null
+  }
+} 
+2017-07-23 17:02:30,826 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-23 17:03:41,423 INFO   [OrderConfirmationAndPaymentController] decrypted spotID63 
+2017-07-23 17:03:41,424 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:03:41,424 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 63 
+2017-07-23 17:03:41,425 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:03:41,816 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:03:41,884 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:03:41,893 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:03:41,961 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:03:41,962 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:03:42,160 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 63,
+    "startDate" : "2017-06-21",
+    "endDate" : "2017-07-21",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "2r6jfd44fm6pe3mmh95mgf90gu.mpg",
+    "videoId" : 63,
+    "price" : 495.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-23 17:03:42,160 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is spyburn@cabletvadsamerica.com 
+2017-07-23 17:03:42,161 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-23 17:03:42,165 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-23 17:03:42,165 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 450.00 out of 495.00 and commision of 10.0% to pyAdvertising is 45.00 
+2017-07-23 17:03:42,166 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-23 17:03:42,166 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 450.00 
+2017-07-23 17:03:42,166 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is 45.00 
+2017-07-23 17:03:42,179 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "63",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 63"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "450.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "spyburn@cabletvadsamerica.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "45.00",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 63",
+    "sender_item_id" : "63",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-23 17:03:42,180 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-23 17:03:42,180 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-23 17:03:42,181 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-23 17:03:42,182 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-23 17:03:43,114 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH8iZ1LnhkX29Wol8oqOTn5U4sZOP91u1bk_oMFgzrxZl9leBIG5oafnq36RPooLlPrGalQYeEw9X7CM2a93bKoHnhusg 
+2017-07-23 17:03:43,117 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-23 17:03:43,125 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-23 17:03:43,126 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-23 17:03:43,622 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-23 17:03:43,625 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-23 17:03:43,628 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"18bf41d38aee9\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-23 17:03:43,629 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"18bf41d38aee9\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/C4ULY348S78PQ\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-23 17:03:43,629 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-23 17:20:29,747 INFO   [OrderConfirmationAndPaymentController] decrypted spotID81 
+2017-07-23 17:20:29,748 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:20:29,748 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 81 
+2017-07-23 17:20:29,749 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:20:30,168 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:20:30,246 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:20:30,257 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:20:30,321 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:20:30,322 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:20:30,524 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 17:20:30,528 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:23:49,015 INFO   [OrderConfirmationAndPaymentController] decrypted spotID81 
+2017-07-23 17:23:49,016 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:23:49,016 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 81 
+2017-07-23 17:23:49,018 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:23:49,409 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:23:49,479 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:23:49,488 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:23:49,561 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:23:49,562 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:23:49,756 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 17:23:49,760 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:25:16,932 INFO   [OrderConfirmationAndPaymentController] decrypted spotID81 
+2017-07-23 17:25:16,933 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:25:16,933 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 81 
+2017-07-23 17:25:16,934 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:25:17,331 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:25:17,406 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:25:17,417 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:25:17,485 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:25:17,485 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:25:17,679 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 17:25:17,683 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:26:31,852 INFO   [OrderConfirmationAndPaymentController] decrypted spotID81 
+2017-07-23 17:26:31,853 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:26:31,853 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 81 
+2017-07-23 17:26:31,854 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:26:32,261 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:26:32,333 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:26:32,344 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:26:32,460 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:26:32,460 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:26:32,654 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 17:26:32,658 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:26:45,672 INFO   [OrderConfirmationAndPaymentController] decrypted spotID82 
+2017-07-23 17:26:45,673 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:26:45,673 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 82 
+2017-07-23 17:26:45,674 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:26:46,094 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:26:46,177 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:26:46,187 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:26:46,254 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:26:46,254 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:26:46,438 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 0,
+    "startDate" : null,
+    "endDate" : null,
+    "monday" : null,
+    "tuesday" : null,
+    "wednesday" : null,
+    "thrusday" : null,
+    "friday" : null,
+    "saturday" : null,
+    "sunday" : null,
+    "cities" : [ ],
+    "cableHeadEnd" : null,
+    "company" : null,
+    "spotName" : null,
+    "videoId" : 0,
+    "price" : 0.0,
+    "channelOrdered" : null,
+    "playType" : null,
+    "unitCost" : 0.0,
+    "email" : null,
+    "payPalAccountInfo" : null,
+    "spotPaid" : false,
+    "payPalExists" : false
+  }
+} 
+2017-07-23 17:26:46,442 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer 
+2017-07-23 17:27:05,343 INFO   [OrderConfirmationAndPaymentController] decrypted spotID62 
+2017-07-23 17:27:05,344 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-23 17:27:05,344 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-23 17:27:05,345 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-23 17:27:05,746 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-23 17:27:05,818 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-23 17:27:05,826 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@6a396c1e] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:27:05,896 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-23 17:27:05,897 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6c3f5566] 
+2017-07-23 17:27:06,103 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-23 17:27:06,103 INFO   [OrderConfirmationAndPaymentController] Paypal Info of cable operator is spyburn@cabletvadsamerica.com 
+2017-07-23 17:27:06,104 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payment@pyadvertising.com 
+2017-07-23 17:27:06,108 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-23 17:27:06,109 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and commision of 10.0% to pyAdvertising is .36 
+2017-07-23 17:27:06,109 INFO   [OrderConfirmationAndPaymentController] Pyadvertising paypalinfo from config payment@pyadvertising.com 
+2017-07-23 17:27:06,109 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to cable operator is 3.64 
+2017-07-23 17:27:06,109 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to pyAdvertising is .36 
+2017-07-23 17:27:06,121 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "PyAdvertising Invoice Payment for Order Number 62"
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "3.64",
+      "currency" : "USD"
+    },
+    "note" : "This is a payment for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "spyburn@cabletvadsamerica.com"
+  }, {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : ".36",
+      "currency" : "USD"
+    },
+    "note" : "This is a comission for Order number 62",
+    "sender_item_id" : "62",
+    "receiver" : "payment@pyadvertising.com"
+  } ]
+} 
+2017-07-23 17:27:06,121 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-23 17:27:06,122 INFO   [ConfigurationHandler] Configuration value to Configuration Key: clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2017-07-23 17:27:06,122 INFO   [ConfigurationHandler] Configuration value to Configuration Key: secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2017-07-23 17:27:06,123 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU"
+} 
+2017-07-23 17:27:06,895 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH8iZ1LnhkX29Wol8oqOTn5U4sZOP91u1bk_oMFgzrxZl9leBIG5oafnq36RPooLlPrGalQYeEw9X7CM2a93bKoHnhusg 
+2017-07-23 17:27:06,898 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-23 17:27:06,908 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-23 17:27:06,909 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@4a003cbe] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@4082ba93] 
+2017-07-23 17:27:07,421 WARN   [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 400 (Bad Request); invoking error handler 
+2017-07-23 17:27:07,424 INFO   [PayOutApplication] HttpClientErrorException occured 
+2017-07-23 17:27:07,426 INFO   [PayOutApplication] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"7ba95de636fff\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-23 17:27:07,427 INFO   [PrettyPrinterJson] {
+  "batch_header" : null,
+  "links" : null,
+  "error" : {
+    "name" : null,
+    "debug_id" : null,
+    "message" : "{\"name\":\"USER_BUSINESS_ERROR\",\"message\":\"User business error.\",\"debug_id\":\"7ba95de636fff\",\"information_link\":\"https://developer.paypal.com/docs/api/payments.payouts-batch/#errors\",\"details\":[{\"field\":\"SENDER_BATCH_ID\",\"issue\":\"Batch with given sender_batch_id already exists\",\"link\":[{\"href\":\"https://api.sandbox.paypal.com/v1/payments/payouts/BK4JHA8UG6DKW\",\"rel\":\"self\",\"method\":\"GET\"}]}]}",
+    "information_link" : "Bad Request",
+    "details" : null
+  }
+} 
+2017-07-23 17:27:07,427 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
