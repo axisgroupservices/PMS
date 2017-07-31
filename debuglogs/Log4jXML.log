@@ -8543,3 +8543,552 @@ Printing Response:::::::
   }
 } 
 2017-07-23 17:27:07,427 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Something went wrong. Please, contact PyAdvertising. No balance transfered 
+2017-07-29 13:44:44,064 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:44:44,084 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 91.14 out of 100.00 and commision of 10.0% to pyAdvertising is 99.75Total cash roboadplacer has is 100.00 
+2017-07-29 13:47:26,810 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:47:26,825 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 91.14 out of 100.00 and to pyAdvertising is after 0.25 cent paypal charge10.0% to pyAdvertising is 99.75 Total cash roboadplacer has is 100.00 
+2017-07-29 13:48:38,946 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:48:38,962 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 91.14 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 Total cash roboadplacer has is 100.00 
+2017-07-29 13:55:22,449 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:55:22,469 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 Total cash roboadplacer has is 100.00 
+2017-07-29 13:56:17,567 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:56:17,583 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75from Roboadplacer whcih has 100.00 
+2017-07-29 13:57:46,924 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 13:57:46,939 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 from Roboadplacer whcih has 100.00and new balance to Pyadvertising will be 8.840909090909093 
+2017-07-29 14:00:43,776 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 14:00:43,791 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 from Roboadplacer whcih has 100.00and new balance to Pyadvertising will be 8.840909090909093 
+2017-07-29 14:01:49,862 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 14:01:49,881 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 from Roboadplacer which has 100.00 and new balance to Pyadvertising (commisssion ) will be 8.840909090909093 
+2017-07-29 14:07:30,213 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 14:07:30,229 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 90.91 out of 100.00 and to pyAdvertising after 0.25 cent paypal charge is 99.75 from Roboadplacer which has 100.00 and new balance to Pyadvertising (commisssion ) will be 8.840909090909093 
+2017-07-29 21:53:11,487 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 21:53:13,959 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 21:53:23,332 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 21:54:01,830 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 21:54:02,111 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 21:54:02,147 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@1f9e9475] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3aa078fd] 
+2017-07-29 21:55:50,320 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 21:55:50,928 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 21:55:52,454 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 21:55:58,859 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 21:55:59,125 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 21:55:59,164 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@626abbd0] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@169bb4dd] 
+2017-07-29 21:56:10,569 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 21:56:10,570 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 21:56:10,572 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 21:56:11,074 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 21:56:11,195 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 21:56:11,208 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@169bb4dd] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 21:57:18,232 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 21:57:18,233 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 21:57:18,234 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 21:57:18,717 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 21:57:18,786 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 21:57:18,798 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-29 21:58:33,909 DEBUG  [OrderConfirmationAndPaymentController] [Ljava.lang.StackTraceElement;@5606c0b 
+2017-07-29 21:58:33,910 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is null 
+2017-07-29 22:02:03,226 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 22:02:03,227 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 22:02:03,230 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 22:02:03,783 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 22:02:03,880 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 22:02:03,893 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@169bb4dd] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:02:04,933 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-29 22:02:04,934 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:02:05,225 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "payPalExists" : true,
+    "spotPaid" : true
+  }
+} 
+2017-07-29 22:02:36,298 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 22:02:36,309 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-29 22:03:54,997 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 22:03:54,998 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 22:03:55,000 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 22:03:55,606 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 22:03:55,622 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 22:03:55,643 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@169bb4dd] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:03:55,826 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-29 22:03:55,826 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:03:56,107 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "payPalExists" : true,
+    "spotPaid" : true
+  }
+} 
+2017-07-29 22:04:00,831 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 22:04:00,843 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-29 22:05:42,414 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is pyadvertising-merchant@gmail.com 
+2017-07-29 22:08:37,310 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-29 22:08:37,312 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-29 22:08:37,313 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 22:08:37,880 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-29 22:08:37,985 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 22:08:37,997 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@169bb4dd] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:08:38,127 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-29 22:08:38,128 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-29 22:08:38,369 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "payPalExists" : true,
+    "spotPaid" : false
+  }
+} 
+2017-07-29 22:08:41,187 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-29 22:08:41,198 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-29 22:08:57,225 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is pyadvertising-merchant@gmail.com 
+2017-07-29 22:09:17,616 INFO   [OrderConfirmationAndPaymentController] Paypal-Info of payee-entity that the balance is being transfered is pyadvertising-merchant@gmail.com 
+2017-07-29 22:09:52,463 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity pyadvertising-merchant@gmail.comis 9.75 
+2017-07-29 22:10:18,291 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity pyadvertising-merchant@gmail.com is 9.75 
+2017-07-29 22:13:11,906 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "62",
+    "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "9.75",
+      "currency" : "USD"
+    },
+    "note" : "Balance Transfered to PyAdverting for order number 62.",
+    "sender_item_id" : "62",
+    "receiver" : "pyadvertising-merchant@gmail.com"
+  } ]
+} 
+2017-07-29 22:13:46,331 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-29 22:13:46,333 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3 
+2017-07-29 22:13:46,335 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1 
+2017-07-29 22:13:46,340 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3",
+  "secret" : "EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1"
+} 
+2017-07-29 22:14:34,712 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH8WfVyuEGnXdb4wB2wsc7pYsdoeUO4FqE3X8l_Lkx20INP-QipybGsIto09r0LAkQ--Mvgy6SSWhtZsZdZZ4e7H4qYCw 
+2017-07-29 22:15:19,486 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-29 22:15:19,531 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-29 22:15:19,534 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@30c31dd7] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@499b2a5c] 
+2017-07-29 22:15:20,803 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-29 22:15:20,805 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@499b2a5c] 
+2017-07-29 22:15:44,998 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "6CZRCUB6Y7EY4",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "62",
+      "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/6CZRCUB6Y7EY4",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-29 22:18:42,717 INFO   [OrderConfirmationAndPaymentController] Paypal-Info of payee-entity that the balance is being transfered is pyadvertising-merchant@gmail.com 
+2017-07-29 22:19:25,933 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity pyadvertising-merchant@gmail.com is 9.75 
+2017-07-29 22:19:47,664 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "6500",
+    "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "9.75",
+      "currency" : "USD"
+    },
+    "note" : "Balance Transfered to PyAdverting for order number 62.",
+    "sender_item_id" : "6500",
+    "receiver" : "pyadvertising-merchant@gmail.com"
+  } ]
+} 
+2017-07-29 22:20:07,333 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-29 22:20:07,335 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3 
+2017-07-29 22:20:07,337 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1 
+2017-07-29 22:20:07,340 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3",
+  "secret" : "EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1"
+} 
+2017-07-29 22:20:07,881 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAH8WfVyuEGnXdb4wB2wsc7pYsdoeUO4FqE3X8l_Lkx20INP-QipybGsIto09r0LAkQ--Mvgy6SSWhtZsZdZZ4e7H4qYCw 
+2017-07-29 22:20:07,954 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-29 22:20:07,986 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-29 22:20:07,989 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@7674a051] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3a7704c] 
+2017-07-29 22:20:08,961 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-29 22:20:08,963 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3a7704c] 
+2017-07-29 22:20:08,986 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "KTG7N3TFZJFWG",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "6500",
+      "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/KTG7N3TFZJFWG",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-29 22:21:22,084 INFO   [OrderConfirmationAndPaymentController] 15 secs waiting period completed!! 
+2017-07-29 22:22:03,258 INFO   [OrderConfirmationAndPaymentController] Transfering balance to spyburn@cabletvadsamerica.com 
+2017-07-29 22:24:24,208 INFO   [OrderConfirmationAndPaymentController] Paypal-Info of payee-entity that the balance is being transfered is payments-buyer@roboadplacer.com 
+2017-07-29 22:24:46,781 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity payments-buyer@roboadplacer.com is 9.10 
+2017-07-29 22:30:35,236 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : "6600",
+    "email_subject" : "Balance transfered for order number 62."
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "9.10",
+      "currency" : "USD"
+    },
+    "note" : "Balance transfered for order number 62.",
+    "sender_item_id" : "62",
+    "receiver" : "payments-buyer@roboadplacer.com"
+  } ]
+} 
+2017-07-29 22:31:19,080 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-29 22:31:19,082 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.clientId (should not be null) : is AS7ujMejYnyRhSyBBfKWIkTNBkkI-GkSRI_gKTLCOmAZvPbJX434U2xluJCVt5ZLn39qyms5b4IXa_Mr 
+2017-07-29 22:31:19,083 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.secret (should not be null) : is EF8hHydjyR0yriyvxZ8UhsbH0si2WPwYXFYwMPQ2T3DodNfd67TZnHGd0fc7UIUJTwlFYfS-EZCgSgRb 
+2017-07-29 22:31:19,087 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AS7ujMejYnyRhSyBBfKWIkTNBkkI-GkSRI_gKTLCOmAZvPbJX434U2xluJCVt5ZLn39qyms5b4IXa_Mr",
+  "secret" : "EF8hHydjyR0yriyvxZ8UhsbH0si2WPwYXFYwMPQ2T3DodNfd67TZnHGd0fc7UIUJTwlFYfS-EZCgSgRb"
+} 
+2017-07-29 22:32:41,205 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAEkGwVqofoqbz_87tbUXq5IgJrpfNqTBWsHLBy8fN098ZNd_G3yjedYWVVlT_T0XoVFBuUZfy8RPnqX9I6SrYxS20dlIQ 
+2017-07-29 22:33:17,425 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-29 22:33:17,459 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-29 22:33:17,462 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@117632cf] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@2fb68ec6] 
+2017-07-29 22:33:19,094 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-29 22:33:19,096 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@2fb68ec6] 
+2017-07-29 22:33:38,483 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "LZGMH84EPRQZJ",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : "6600",
+      "email_subject" : "Balance transfered for order number 62."
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/LZGMH84EPRQZJ",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-29 22:34:36,185 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-29 22:34:36,263 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" 
+2017-07-29 22:34:36,265 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-29 22:34:36,371 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" resulted in 200 (OK) 
+2017-07-29 22:34:36,374 DEBUG  [RestTemplate] Reading [class java.lang.Boolean] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@57dc9128] 
+2017-07-29 22:34:36,386 INFO   [OrderConfirmationAndPaymentController] Payment for OrderId 62 is saved. Is payment saved (must Be true) ? true 
+2017-07-29 22:37:25,759 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Payment was successfully completed. No action is needed 
+2017-07-30 01:20:12,171 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-30 01:20:12,173 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-30 01:20:12,176 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 01:20:12,748 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-30 01:20:12,849 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-30 01:20:12,867 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@169bb4dd] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-30 01:20:13,572 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-30 01:20:13,573 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1f9e9475] 
+2017-07-30 01:20:13,798 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-30 01:20:46,826 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-30 01:20:46,837 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-30 01:22:27,689 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-30 01:22:27,691 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-30 01:22:27,692 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 01:22:28,198 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-30 01:22:28,291 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-30 01:22:28,303 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-30 01:22:28,435 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-30 01:22:28,435 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-30 01:22:28,594 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : false,
+    "payPalExists" : true
+  }
+} 
+2017-07-30 01:22:28,595 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-30 01:22:28,600 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-30 01:22:28,601 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is pyadvertising-merchant@gmail.com 
+2017-07-30 01:22:28,601 INFO   [OrderConfirmationAndPaymentController] Paypal-Info of payee-entity that the balance is being transfered is pyadvertising-merchant@gmail.com 
+2017-07-30 01:22:28,601 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity pyadvertising-merchant@gmail.com is 9.75 
+2017-07-30 01:22:28,605 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 01:22:28,608 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/62" 
+2017-07-30 01:22:28,609 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-07-30 01:22:28,689 WARN   [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/62" resulted in 404 (Not Found); invoking error handler 
+2017-07-30 01:22:28,694 ERROR  [PayOutApplication] org.springframework.web.client.HttpClientErrorException: 404 Not Found 
+2017-07-30 01:22:28,694 INFO   [PayOutApplication] unique batch id null 
+2017-07-30 01:22:28,714 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : null,
+    "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "9.75",
+      "currency" : "USD"
+    },
+    "note" : "Balance Transfered to PyAdverting for order number 62.",
+    "sender_item_id" : "62",
+    "receiver" : "pyadvertising-merchant@gmail.com"
+  } ]
+} 
+2017-07-30 01:22:28,715 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-30 01:22:28,716 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3 
+2017-07-30 01:22:28,718 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1 
+2017-07-30 01:22:28,721 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "Afug_t7zpEqRkmM4tBMgKfWOb_tkYs6H_Omkmhn7AuqdS1gJZG3eb38yN6nT00Jv23fAPc0979xe3ro3",
+  "secret" : "EFoHhF3qJ9w-khf77QjHy3jj-8WumohooAHKu7IvLiuSBdAZQlkqQlLn354DW7X7B5p62_YWITKWVAK1"
+} 
+2017-07-30 01:22:29,724 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAHggpEsrkA8Zv0h2bPLOnyHjGdBQF4URkUL9JwDrt1M5feEoX5MSs3nMudVofeRSaCorQUJf8DLJmf06Kh3gu-xL8H9wA 
+2017-07-30 01:22:29,728 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-30 01:22:29,741 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-30 01:22:29,742 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@59402b8f] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7188af83] 
+2017-07-30 01:22:31,095 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-30 01:22:31,096 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@7188af83] 
+2017-07-30 01:22:31,100 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "VSLKLAYW8YUPC",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : null,
+      "email_subject" : "Balance Transfered to PyAdverting for order number 62."
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/VSLKLAYW8YUPC",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-30 01:22:46,100 INFO   [OrderConfirmationAndPaymentController] 15 secs waiting period completed!! 
+2017-07-30 01:22:46,100 INFO   [OrderConfirmationAndPaymentController] Transfering balance to spyburn@cabletvadsamerica.com 
+2017-07-30 01:22:46,100 INFO   [OrderConfirmationAndPaymentController] Paypal-Info of payee-entity that the balance is being transfered is payments-buyer@roboadplacer.com 
+2017-07-30 01:22:46,100 INFO   [OrderConfirmationAndPaymentController] Amount that is transfered to payee-entity payments-buyer@roboadplacer.com is 9.10 
+2017-07-30 01:22:46,100 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 01:22:46,103 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/62" 
+2017-07-30 01:22:46,104 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-07-30 01:22:46,185 WARN   [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/62" resulted in 404 (Not Found); invoking error handler 
+2017-07-30 01:22:46,186 ERROR  [PayOutApplication] org.springframework.web.client.HttpClientErrorException: 404 Not Found 
+2017-07-30 01:22:46,187 INFO   [PayOutApplication] unique batch id null 
+2017-07-30 01:22:46,191 INFO   [PrettyPrinterJson] {
+  "sender_batch_header" : {
+    "sender_batch_id" : null,
+    "email_subject" : "Balance transfered for order number 62."
+  },
+  "items" : [ {
+    "recipient_type" : "EMAIL",
+    "amount" : {
+      "value" : "9.10",
+      "currency" : "USD"
+    },
+    "note" : "Balance transfered for order number 62.",
+    "sender_item_id" : "62",
+    "receiver" : "payments-buyer@roboadplacer.com"
+  } ]
+} 
+2017-07-30 01:22:46,192 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com/ 
+2017-07-30 01:22:46,193 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.clientId (should not be null) : is AS7ujMejYnyRhSyBBfKWIkTNBkkI-GkSRI_gKTLCOmAZvPbJX434U2xluJCVt5ZLn39qyms5b4IXa_Mr 
+2017-07-30 01:22:46,194 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.secret (should not be null) : is EF8hHydjyR0yriyvxZ8UhsbH0si2WPwYXFYwMPQ2T3DodNfd67TZnHGd0fc7UIUJTwlFYfS-EZCgSgRb 
+2017-07-30 01:22:46,194 INFO   [PrettyPrinterJson] {
+  "configLocation" : "env.properties",
+  "payPalEndPoint" : "https://api.sandbox.paypal.com/",
+  "clientId" : "AS7ujMejYnyRhSyBBfKWIkTNBkkI-GkSRI_gKTLCOmAZvPbJX434U2xluJCVt5ZLn39qyms5b4IXa_Mr",
+  "secret" : "EF8hHydjyR0yriyvxZ8UhsbH0si2WPwYXFYwMPQ2T3DodNfd67TZnHGd0fc7UIUJTwlFYfS-EZCgSgRb"
+} 
+2017-07-30 01:22:47,070 INFO   [PayOutApplication] Access Token Created successfully Bearer A21AAHjSaj9rbJ4phlvN8bevVRsS_vacpFDZLwYdVTSkzBaM6Q81LVofXmKyG-orwEArCwNBZbv1j0WNvSsfy7huOscfh7B2g 
+2017-07-30 01:22:47,075 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" 
+2017-07-30 01:22:47,084 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
+2017-07-30 01:22:47,084 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.PaypalPayoutRequest@f58853c] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1224144a] 
+2017-07-30 01:22:48,094 DEBUG  [RestTemplate] POST request for "https://api.sandbox.paypal.com/v1/payments/payouts" resulted in 201 (Created) 
+2017-07-30 01:22:48,094 DEBUG  [RestTemplate] Reading [class org.axisgroup.paypal.payouts.response.PaypalPayoutResponse] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@1224144a] 
+2017-07-30 01:22:48,098 INFO   [PayOutApplication] {
+  "batch_header" : {
+    "payout_batch_id" : "YBJES827HJSLL",
+    "batch_status" : "PENDING",
+    "sender_batch_header" : {
+      "sender_batch_id" : null,
+      "email_subject" : "Balance transfered for order number 62."
+    }
+  },
+  "links" : [ {
+    "href" : "https://api.sandbox.paypal.com/v1/payments/payouts/YBJES827HJSLL",
+    "rel" : "self",
+    "method" : "GET"
+  } ],
+  "error" : null
+} 
+2017-07-30 01:22:48,098 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 01:22:48,101 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" 
+2017-07-30 01:22:48,101 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-30 01:22:48,152 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/insertpayment/order/62" resulted in 200 (OK) 
+2017-07-30 01:22:48,153 DEBUG  [RestTemplate] Reading [class java.lang.Boolean] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@3b35a229] 
+2017-07-30 01:22:48,170 INFO   [OrderConfirmationAndPaymentController] Payment for OrderId 62 is saved. Is payment saved (must Be true) ? true 
+2017-07-30 01:22:48,170 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is Payment was successfully completed. No action is needed 
+2017-07-30 19:39:44,999 INFO   [OrderConfirmationAndPaymentController] Inside orderConfirmationAndPayouts 
+2017-07-30 19:39:45,000 INFO   [OrderConfirmationAndPaymentController] SpotID from frontend 62 
+2017-07-30 19:39:45,002 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-07-30 19:39:45,521 DEBUG  [RestTemplate] Created POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" 
+2017-07-30 19:39:45,614 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/*+json] 
+2017-07-30 19:39:45,624 DEBUG  [RestTemplate] Writing [org.roboadplacer.request.GetContractsInfoBySpotId@4148db48] using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-30 19:39:45,805 DEBUG  [RestTemplate] POST request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/getcontractinfo/email" resulted in 200 (OK) 
+2017-07-30 19:39:45,806 DEBUG  [RestTemplate] Reading [class org.axisgroup.client.response.GetContractInfoBySpotIdResponse] as "application/json;charset=UTF-8" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@282003e1] 
+2017-07-30 19:39:46,020 INFO   [PrettyPrinterJson] {
+  "contract" : {
+    "id" : 62,
+    "startDate" : "2017-06-20",
+    "endDate" : "2017-07-20",
+    "monday" : "3",
+    "tuesday" : "3",
+    "wednesday" : "3",
+    "thrusday" : "3",
+    "friday" : "3",
+    "saturday" : "3",
+    "sunday" : "3",
+    "cities" : [ "Hillsboro" ],
+    "cableHeadEnd" : "Hillsboro",
+    "company" : "Cable TV Ads America",
+    "spotName" : "36m5mgcpsmbadoj7ddicol9os5.mpg",
+    "videoId" : 62,
+    "price" : 4.0,
+    "channelOrdered" : "FSN",
+    "playType" : "6am-12pm",
+    "unitCost" : 20.0,
+    "email" : "omarcraig@hotmail.com",
+    "payPalAccountInfo" : "spyburn@cabletvadsamerica.com",
+    "spotPaid" : true,
+    "payPalExists" : true
+  }
+} 
+2017-07-30 19:39:46,021 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-30 19:39:46,026 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-30 19:39:46,026 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is pyadvertising-merchant@gmail.com 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] 15 secs waiting period completed!! 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] Transfering balance to spyburn@cabletvadsamerica.com 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is The payment to this order id is already completed. 

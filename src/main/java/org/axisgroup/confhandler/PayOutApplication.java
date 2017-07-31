@@ -30,14 +30,16 @@ public class PayOutApplication {
 	private static final Logger logger = Logger.getLogger(PayOutApplication.class);
 	private static final String CONFIG_LOCATION = "env.properties";
 	private static final String PAYPAL_ENDPOINT = "oauth.endpoint.paypal";
-	private static final String CLIENT_ID = "clientId";
-	private static final String SECRET = "secret";
+	private static final String ROBOADPLACER_CLIENT_ID = "roboadplacer.clientId";
+	private static final String ROBOADPLACER_SECRET = "roboadplacer.secret";
+	private static final String PYADVERTISING_CLIENT_ID = "pyadvertising.clientId";
+	private static final String PYADVERTISING_SECRET = "pyadvertising.secret";
 
 	
 	public static void main(String[] args) throws IOException {
 		// For web, this location should be Meta-Inf/env.properties and that
 		// file must be there as well.
-		getConfigurations();
+		//getConfigurations();
 		
 		ConfigurationHandler.getValueToConfigurationKey("pyadvertising.paypalinfo", CONFIG_LOCATION);
 
@@ -83,14 +85,17 @@ public class PayOutApplication {
 
 	}
 
-	public PaypalPayoutRequest createPaypalPayoutRequest(String uniqueBatchIdperMonth, String emailSubject,
-			List<PayoutStakeHolderInfo> stakeHoldersInfo) {
+	public PaypalPayoutRequest createPaypalPayoutRequest(String emailSubject,
+			List<PayoutStakeHolderInfo> stakeHoldersInfo,String spotId) {
 		// TODO Auto-generated method stub
+		String uniqueBatchIdperMonth= generateUniqueBatchId(spotId);
+		logger.info("unique batch id "+uniqueBatchIdperMonth);
 		PaypalPayoutRequest request = new PaypalPayoutRequest();
 		// Create Batch header
 		SendBatchHeader header = new SendBatchHeader();
 		header.setSender_batch_id(uniqueBatchIdperMonth);
 		header.setEmail_subject(emailSubject);
+		header.setSender_batch_id(uniqueBatchIdperMonth);
 
 		// Create items
 		List<Item> items = generatePayoutItems(stakeHoldersInfo);
@@ -102,10 +107,32 @@ public class PayOutApplication {
 
 	}
 
-	public PaypalPayoutResponse payOut(PaypalPayoutRequest request ) {
+	private String generateUniqueBatchId(String spotId) {
+		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub
+				String isPaymentSaved = null;
+				try {
+					String url = ConfigurationHandler.getValueToConfigurationKey("server.url", "env.properties");
+					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/{spotId}";
+					String endPoint = url + resourcePath;
+
+					Map<String, String> uriParams = new HashMap<String, String>();
+					uriParams.put("spotId", spotId);
+					RestTemplate template = new RestTemplate();
+					isPaymentSaved = template.getForObject(endPoint, String.class, uriParams);
+					logger.info(
+							"Payment for OrderId " + spotId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
+				} catch (HttpClientErrorException e) {
+					logger.error(e);
+				}
+				return isPaymentSaved;
+		
+	}
+
+	public PaypalPayoutResponse payOut(PaypalPayoutRequest request, String payeeEntity ) {
 		// TODO Auto-generated method stub
 		// gets configuration
-		PaypalConfiguration configs = getConfigurations();
+		PaypalConfiguration configs = getConfigurations(payeeEntity);
 
 		PaypalPayoutResponse response = new PaypalPayoutResponse();
 		try {
@@ -192,13 +219,24 @@ public class PayOutApplication {
 
 	}
 
-	private static PaypalConfiguration getConfigurations() {
+	private static PaypalConfiguration getConfigurations(String payeeEntity) {
 		PaypalConfiguration configs = null;
-
+		String payPalEndpoint=null;
+		String clientId=null;
+		String secret=null;
 		try{
-		String payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
-		String clientId = ConfigurationHandler.getValueToConfigurationKey(CLIENT_ID, CONFIG_LOCATION);
-		String secret = ConfigurationHandler.getValueToConfigurationKey(SECRET, CONFIG_LOCATION);
+		if(payeeEntity.equals("ROBOADPLACER")){
+			payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
+			clientId = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_CLIENT_ID, CONFIG_LOCATION);
+			secret = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_SECRET, CONFIG_LOCATION);
+		}
+		
+		else if(payeeEntity.equals("PYADVERTISING")){
+			payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
+			clientId = ConfigurationHandler.getValueToConfigurationKey(PYADVERTISING_CLIENT_ID, CONFIG_LOCATION);
+			secret = ConfigurationHandler.getValueToConfigurationKey(PYADVERTISING_SECRET, CONFIG_LOCATION);
+		}
+		
 
 		if (!payPalEndpoint.isEmpty() && !clientId.isEmpty() && !secret.isEmpty()) {
 			configs = new PaypalConfiguration();
@@ -206,6 +244,10 @@ public class PayOutApplication {
 			configs.setConfigLocation(CONFIG_LOCATION);
 			configs.setPayPalEndPoint(payPalEndpoint);
 			configs.setSecret(secret);
+		}
+		else{
+			logger.info(new Exception("Excetion Occured while getting configs!!"));
+			throw new Exception("Excetion Occured while getting configs!!");
 		}
 		
 		PrettyPrinterJson.printObject(configs);

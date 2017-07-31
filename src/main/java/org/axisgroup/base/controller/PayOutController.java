@@ -26,6 +26,6 @@ public class PayOutController {
 		
 		PayOutApplication payoutApp= new PayOutApplication();
 		
-		return payoutApp.payOut(request);
+		return null;
 	}
 }
