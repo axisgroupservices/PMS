@@ -43,6 +43,17 @@ public class PayOutApplication {
 		
 		ConfigurationHandler.getValueToConfigurationKey("pyadvertising.paypalinfo", CONFIG_LOCATION);
 
+		PayOutApplication p= new PayOutApplication();
+		String id=p.generateUniqueBatchId("45");
+		
+		
+		System.out.println(id);
+		
+		
+		
+		
+		
+		
 	/*
 		List<PayoutStakeHolderInfo> stakeHoldersInfo = new ArrayList<>();
 		PayoutStakeHolderInfo stakeHolder = new PayoutStakeHolderInfo();
@@ -113,13 +124,12 @@ public class PayOutApplication {
 				String isPaymentSaved = null;
 				try {
 					String url = ConfigurationHandler.getValueToConfigurationKey("server.url", "env.properties");
-					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal/{spotId}";
+					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId="+spotId;
 					String endPoint = url + resourcePath;
 
-					Map<String, String> uriParams = new HashMap<String, String>();
-					uriParams.put("spotId", spotId);
+					
 					RestTemplate template = new RestTemplate();
-					isPaymentSaved = template.getForObject(endPoint, String.class, uriParams);
+					isPaymentSaved = template.getForObject(endPoint, String.class);
 					logger.info(
 							"Payment for OrderId " + spotId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
 				} catch (HttpClientErrorException e) {
@@ -257,5 +267,7 @@ public class PayOutApplication {
 		}
 		return configs;
 	}
+	
+	
 
 }

@@ -9092,3 +9092,17 @@ Printing Response:::::::
 2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] 15 secs waiting period completed!! 
 2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] Transfering balance to spyburn@cabletvadsamerica.com 
 2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is The payment to this order id is already completed. 
+2017-08-07 00:27:07,113 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payments@pyadvertising.com 
+2017-08-07 00:27:07,115 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-08-07 00:27:07,634 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" 
+2017-08-07 00:27:07,638 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-08-07 00:27:08,811 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" resulted in 200 (OK) 
+2017-08-07 00:27:08,811 DEBUG  [RestTemplate] Reading [java.lang.String] as "text/plain;charset=ISO-8859-1" using [org.springframework.http.converter.StringHttpMessageConverter@ed9d034] 
+2017-08-07 00:27:08,815 INFO   [PayOutApplication] Payment for OrderId 45 is saved. Is payment saved (must Be true) ? 1012 
+2017-08-07 00:28:05,207 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payments@pyadvertising.com 
+2017-08-07 00:28:05,221 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-08-07 00:28:05,965 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" 
+2017-08-07 00:28:05,968 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-08-07 00:28:06,123 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" resulted in 200 (OK) 
+2017-08-07 00:28:06,124 DEBUG  [RestTemplate] Reading [java.lang.String] as "text/plain;charset=ISO-8859-1" using [org.springframework.http.converter.StringHttpMessageConverter@ed9d034] 
+2017-08-07 00:28:06,130 INFO   [PayOutApplication] Payment for OrderId 45 is saved. Is payment saved (must Be true) ? 1013 
