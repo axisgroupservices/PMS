@@ -19,8 +19,7 @@ public class Application {
 	private static final Logger logger = Logger.getLogger(AccountController.class);
 
 	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
-		// TODO Auto-generated method stub
-
+		
 		GetContractsInfoBySpotId getContractsInfoBySpotIdRequest = new GetContractsInfoBySpotId();
 		getContractsInfoBySpotIdRequest.setSpotId("45");
 

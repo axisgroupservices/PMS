@@ -10,6 +10,7 @@ import java.util.Map;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
+import org.axisgroup.base.domain.common.Contract;
 import org.axisgroup.client.response.GetContractInfoBySpotIdResponse;
 import org.axisgroup.common.dto.Amount;
 import org.axisgroup.confhandler.ConfigurationHandler;
@@ -49,7 +50,7 @@ public class OrderConfirmationAndPaymentController {
 		byte[] decoded = Base64.decodeBase64(spotId);
 		spotId = new String(decoded);
 
-		logger.info("decrypted spotID" + spotId);
+		logger.info("decrypted spotID " + spotId);
 
 		try {
 			logger.info("Inside orderConfirmationAndPayouts");
@@ -73,6 +74,7 @@ public class OrderConfirmationAndPaymentController {
 
 			String dollarsToTransfer = null;
 
+			if(splitsPaymentsStakeHolders !=null){
 			for (String payeeEntity : PAYEE_ENTITIES) {
 				String note = null;
 				if (payeeEntity.equals("ROBOADPLACER")) {
@@ -107,13 +109,19 @@ public class OrderConfirmationAndPaymentController {
 			if (StringUtils.isBlank(paymentStatus)) {
 				paymentStatus = "Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer";
 			}
+			
+			}
+			
+			else{
+				paymentStatus="Balance splits did not form between different parties. Please check Pyadvertising. Pay transfer did not complete.";
+			}
 
 		} catch (Exception e) {
 
 			logger.debug(e.getStackTrace());
 		}
 
-		logger.info("The status of payouts api is " + paymentStatus);
+		logger.info("The payment status of payouts api is " + paymentStatus);
 		return paymentStatus;
 	}
 
@@ -152,7 +160,7 @@ public class OrderConfirmationAndPaymentController {
 										logger.error(
 												"Error occured for ordernumber while processing payment. Must resolve manually. SpotID db status: isPaidTocableOperator could not be updated for order numbers! "
 														+ spotId);
-										paymentStatus = "Fatal error occurred!s";
+										paymentStatus = "Fatal error occurred! Do not click the confirm button again and call PyAdvertising.";
 									}
 								}
 							} else {
@@ -226,7 +234,7 @@ public class OrderConfirmationAndPaymentController {
 	 * @return
 	 */
 	private static boolean savePaymentConfirmationToDB(String spotId) {
-		// TODO Auto-generated method stub
+		
 		Boolean isPaymentSaved = false;
 		try {
 			String url = ConfigurationHandler.getValueToConfigurationKey("server.url", "env.properties");
@@ -253,8 +261,11 @@ public class OrderConfirmationAndPaymentController {
 				double amountCollected = response.getContract().getPrice();
 				if (amountCollected != 0.0) {
 
-					priceSplitsHolder = splitPayments(amountCollected);
+					if(StringUtils.isNotBlank(response.getContract().getBalaceAfterFeeDeduction()) & StringUtils.isNotBlank(response.getContract().getBalanceToPyAdvertising())){
+						
+					 priceSplitsHolder = splitPayments(response.getContract().getPrice(), response.getContract().getBalaceAfterFeeDeduction(), response.getContract().getBalanceToPyAdvertising());
 
+					}
 				}
 			}
 
@@ -262,8 +273,18 @@ public class OrderConfirmationAndPaymentController {
 
 		return priceSplitsHolder;
 	}
+	
+	//Splits payments: AmountCollectedFromCustomer, BalanceToPyAdvertising, CableOperator must be in order as below.
+	private static List<String> splitPayments(double totalCash, String amountToOperator,String balanceToPyAdvertising) {
+		List<String> priceSplitsHolder= new ArrayList<>();
+		String amountCollectedString=new DecimalFormat("#.##").format( totalCash);			
+		priceSplitsHolder.add(amountCollectedString);
+		priceSplitsHolder.add(balanceToPyAdvertising);
+		priceSplitsHolder.add(amountToOperator);
+		return priceSplitsHolder;
+	}
 
-	private static List<String> splitPayments(double amountCollected) {
+	/*private static List<String> splitPayments(double amountCollected) {
 		String getCommisionPercent = ConfigurationHandler.getValueToConfigurationKey("commision.percent",
 				"env.properties");
 		String balanceTransferToOperator = null;
@@ -300,6 +321,8 @@ public class OrderConfirmationAndPaymentController {
 		}
 		return priceSplitsHolder;
 	}
+	
+	*/
 
 	public static void main(String[] args) {
 		// This payouts by spotIDs
@@ -325,13 +348,16 @@ public class OrderConfirmationAndPaymentController {
 
 			PrettyPrinterJson.printObject(getContractInfoBySpotIdResponse);
 
+			
 			List<String> splitsPaymentsStakeHolders = generateSplitAmountToStakeHolders(
 					getContractInfoBySpotIdResponse);
 
 			// manipulate samplae values
 			splitsPaymentsStakeHolders.add(0, "10.00");
-			splitsPaymentsStakeHolders.add(1, "9.75");
-			splitsPaymentsStakeHolders.add(2, "9.10");
+			splitsPaymentsStakeHolders.add(1, "9");
+			splitsPaymentsStakeHolders.add(2, new DecimalFormat("#.##").format((10/1.1)-(10/1.1)*.15));
+			
+			PrettyPrinterJson.printObject(splitsPaymentsStakeHolders);
 
 			String dollarsToTransfer = null;
 
