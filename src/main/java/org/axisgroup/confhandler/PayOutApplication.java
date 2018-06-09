@@ -7,13 +7,14 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
-import org.axisgroup.common.dto.Amount;
 import org.axisgroup.common.dto.Item;
 import org.axisgroup.common.dto.PayoutError;
 import org.axisgroup.common.dto.SendBatchHeader;
 import org.axisgroup.paypal.payouts.request.PaypalPayoutRequest;
 import org.axisgroup.paypal.payouts.response.PaypalPayoutResponse;
 import org.axisgroup.paypal.utils.PayoutStakeHolderInfo;
+import org.codehaus.jackson.JsonGenerationException;
+import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -206,7 +207,7 @@ public class PayOutApplication {
 		return items;
 	}
 
-	private String getAccessToken(PaypalConfiguration configs) throws PayPalRESTException {
+	public String getAccessToken(PaypalConfiguration configs) throws PayPalRESTException, JsonGenerationException, JsonMappingException, IOException {
 		// TODO Auto-generated method stub
 		Map<String, String> configurationMap = new HashMap<>();
 		configurationMap.put("oauth.EndPoint", configs.getPayPalEndPoint());
@@ -214,14 +215,16 @@ public class PayOutApplication {
 				configurationMap);
 
 		String accessToken = null;
-		PaypalPayoutResponse response = new PaypalPayoutResponse();
+		logger.info("Token expires in" +aAuthTokenCredential.expiresIn());
+	
+		PrettyPrinterJson.printObject(aAuthTokenCredential);
 
 		accessToken = aAuthTokenCredential.getAccessToken();
 		logger.info("Access Token Created successfully " + accessToken);
 
 		return accessToken;
 	}
-
+	
 	private static void prittyPrint(Object genrics) throws IOException {
 		ObjectMapper obj = new ObjectMapper();
 		logger.info(obj.writerWithDefaultPrettyPrinter().writeValueAsString(genrics));

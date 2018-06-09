@@ -1,10 +1,9 @@
 package org.axisgroup.common.dto;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 
-@JsonInclude(Include.NON_DEFAULT)
+@JsonSerialize(include=JsonSerialize.Inclusion.NON_NULL)
 public class SendBatchHeader {
 	private String sender_batch_id;
 	private String email_subject;

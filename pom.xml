@@ -120,12 +120,7 @@
     <version>5.2.10.Final</version>
 </dependency>
 
-<dependency>
-			<groupId>com.paypal.sdk</groupId>
-			<artifactId>paypal-core</artifactId>
-			<version>1.6.9</version>
-			<type>jar</type>
-		</dependency>
+
 		
 		<dependency>
 			<groupId>org.axisgroup.client</groupId>
@@ -133,6 +128,14 @@
 			<version>200.00.0</version>
 			<type>jar</type>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
+<dependency>
+    <groupId>com.paypal.sdk</groupId>
+    <artifactId>rest-api-sdk</artifactId>
+    <version>1.14.0</version>
+</dependency>
+<!-- Thanks for using https://jar-download.com -->
 		
 		
 

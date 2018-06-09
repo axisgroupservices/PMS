@@ -45,7 +45,7 @@ public class OrderConfirmationAndPaymentController {
 	private static final String[] PAYEE_ENTITIES = { "ROBOADPLACER", "PYADVERTISING" };
 
 	@RequestMapping("/payouts")
-	public String orderConfirmationAndPayouts(@RequestParam("spotid") String spotId) {
+	public String orderConfirmationAndPayouts(@RequestParam("spotId") String spotId) {
 		String paymentStatus = null;
 		byte[] decoded = Base64.decodeBase64(spotId);
 		spotId = new String(decoded);

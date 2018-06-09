@@ -2,10 +2,9 @@ package org.axisgroup.common.dto;
 
 import java.util.List;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.annotation.JsonInclude.Include;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-@JsonInclude(Include.NON_DEFAULT)
+@JsonSerialize(include=JsonSerialize.Inclusion.NON_NULL)
 public class ErrorDetails {
 	private String field;
 	private String issue;
