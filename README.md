@@ -25,6 +25,11 @@ curl -v https://api.sandbox.paypal.com/v1/oauth2/token \
 :EBJmps4QAiLqUDhg-GpJaLIHDJ47LQSBD9cLHThSVdfrorHvvPDU0GltQRiB12lgSUphPnVMrOOMWQT2" \
    -d "grant_type=client_credentials"
    
+ //Login to sandbox paypal
+ https://www.sandbox.paypal.com/mep/dashboard
+ roboad-merchant-1@gmail.com
+ yuhj687H
+   
    
    
    

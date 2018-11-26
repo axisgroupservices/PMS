@@ -14,9 +14,7 @@ public class ConfigurationHandler {
  		try {
  			 ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
  	 		InputStream input = classLoader.getResourceAsStream(confLocation);
- 	 		// ...
  	 		Properties properties = new Properties();
- 	 		
  			properties.load(input);
  			configurationValue=properties.getProperty(confKey);
  			

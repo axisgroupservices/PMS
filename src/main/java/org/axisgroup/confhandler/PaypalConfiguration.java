@@ -1,11 +1,10 @@
 package org.axisgroup.confhandler;
 
 import org.apache.log4j.Logger;
-import org.axisgroup.base.controller.AuthorizeAndCaptureApplication;
 
 public class PaypalConfiguration {
 	
-	private static final Logger logger = Logger.getLogger(AuthorizeAndCaptureApplication.class);
+	private static final Logger logger = Logger.getLogger(PaypalConfiguration.class);
 
 	private static final String CONFIG_LOCATION = "env.properties";
 	private static final String PAYPAL_ENDPOINT = "oauth.endpoint.paypal";

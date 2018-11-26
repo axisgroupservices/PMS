@@ -1,4 +1,4 @@
-package org.axisgroup.confhandler;
+package org.axisgroup.paypal.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,9 +10,11 @@ import org.apache.log4j.Logger;
 import org.axisgroup.common.dto.Item;
 import org.axisgroup.common.dto.PayoutError;
 import org.axisgroup.common.dto.SendBatchHeader;
+import org.axisgroup.confhandler.ConfigurationHandler;
+import org.axisgroup.confhandler.PaypalConfiguration;
+import org.axisgroup.confhandler.PrettyPrinterJson;
 import org.axisgroup.paypal.payouts.request.PaypalPayoutRequest;
 import org.axisgroup.paypal.payouts.response.PaypalPayoutResponse;
-import org.axisgroup.paypal.utils.PayoutStakeHolderInfo;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -98,9 +100,9 @@ public class PayOutApplication {
 	}
 
 	public PaypalPayoutRequest createPaypalPayoutRequest(String emailSubject,
-			List<PayoutStakeHolderInfo> stakeHoldersInfo,String spotId) {
+			List<PayoutStakeHolderInfo> stakeHoldersInfo,String orderId) {
 		// TODO Auto-generated method stub
-		String uniqueBatchIdperMonth= generateUniqueBatchId(spotId);
+		String uniqueBatchIdperMonth= generateUniqueBatchId(orderId);
 		logger.info("unique batch id "+uniqueBatchIdperMonth);
 		PaypalPayoutRequest request = new PaypalPayoutRequest();
 		// Create Batch header
@@ -119,20 +121,20 @@ public class PayOutApplication {
 
 	}
 
-	private String generateUniqueBatchId(String spotId) {
+	private String generateUniqueBatchId(String orderId) {
 		// TODO Auto-generated method stub
 		// TODO Auto-generated method stub
 				String isPaymentSaved = null;
 				try {
 					String url = ConfigurationHandler.getValueToConfigurationKey("server.url", "env.properties");
-					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId="+spotId;
+					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId="+orderId;
 					String endPoint = url + resourcePath;
 
 					
 					RestTemplate template = new RestTemplate();
 					isPaymentSaved = template.getForObject(endPoint, String.class);
 					logger.info(
-							"Payment for OrderId " + spotId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
+							"Payment for OrderId " + orderId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
 				} catch (HttpClientErrorException e) {
 					logger.error(e);
 				}

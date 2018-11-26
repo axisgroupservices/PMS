@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.paypal.api.services</groupId>
-	<artifactId>PaymentManagement</artifactId>
+	<artifactId>PayPal-Services</artifactId>
 	<version>1.0.0</version>
 	
 	<url>http://maven.apache.org</url>
@@ -141,7 +141,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>PaymentManagement</finalName>
+		<finalName>Paypals</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
