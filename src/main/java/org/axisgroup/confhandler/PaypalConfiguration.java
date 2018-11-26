@@ -8,8 +8,8 @@ public class PaypalConfiguration {
 
 	private static final String CONFIG_LOCATION = "env.properties";
 	private static final String PAYPAL_ENDPOINT = "oauth.endpoint.paypal";
-	private static final String ROBOADPLACER_CLIENT_ID = "roboadplacer.clientId";
-	private static final String ROBOADPLACER_SECRET = "roboadplacer.secret";
+	private static final String RECEIVER_CLIENT_ID = "receiver.clientId";
+	private static final String RECEIVER_SECRET = "receiver.secret";
 	private static final String PAYPAL_PAYMENT_MODE = "paypal.payment.mode";
 	private static final String SERVER_URL="server.url";
 	
@@ -30,8 +30,8 @@ public class PaypalConfiguration {
 		try {
 			
 			this.payPalEndPoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
-			this.clientId = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_CLIENT_ID, CONFIG_LOCATION);
-			this.secret = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_SECRET, CONFIG_LOCATION);
+			this.clientId = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_CLIENT_ID, CONFIG_LOCATION);
+			this.secret = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_SECRET, CONFIG_LOCATION);
 			this.createPayment = ConfigurationHandler.getValueToConfigurationKey(CREATE_PAYMENT, CONFIG_LOCATION);
 			this.mode=ConfigurationHandler.getValueToConfigurationKey(PAYPAL_PAYMENT_MODE, CONFIG_LOCATION);
 			this.serverURL=ConfigurationHandler.getValueToConfigurationKey(SERVER_URL, CONFIG_LOCATION);

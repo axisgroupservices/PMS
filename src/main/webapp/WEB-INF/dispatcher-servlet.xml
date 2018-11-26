@@ -19,19 +19,6 @@
     <context:annotation-config />
 
 	
-	<bean id="AccountBean" class="org.axisgroup.common.dto.Account">
-		<property name="personalAccount" value="personalAccount" />
-	</bean>
 	
-	
-	<bean id="AccountServiceBean" class="org.axisgroup.common.dto.AccountService">
-		<property name="name" value="TestName" />
-		<property name="address" value="5151 st" />
-	</bean>
-	
-	
-	
-
-
 
 </beans>

@@ -33,8 +33,8 @@ public class PayOutApplication {
 	private static final Logger logger = Logger.getLogger(PayOutApplication.class);
 	private static final String CONFIG_LOCATION = "env.properties";
 	private static final String PAYPAL_ENDPOINT = "oauth.endpoint.paypal";
-	private static final String ROBOADPLACER_CLIENT_ID = "roboadplacer.clientId";
-	private static final String ROBOADPLACER_SECRET = "roboadplacer.secret";
+	private static final String RECEIVER_CLIENT_ID = "receiver.clientId";
+	private static final String RECEIVER_SECRET = "receiver.secret";
 	private static final String PYADVERTISING_CLIENT_ID = "pyadvertising.clientId";
 	private static final String PYADVERTISING_SECRET = "pyadvertising.secret";
 
@@ -242,8 +242,8 @@ public class PayOutApplication {
 		try{
 		if(payeeEntity.equals("ROBOADPLACER")){
 			payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
-			clientId = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_CLIENT_ID, CONFIG_LOCATION);
-			secret = ConfigurationHandler.getValueToConfigurationKey(ROBOADPLACER_SECRET, CONFIG_LOCATION);
+			clientId = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_CLIENT_ID, CONFIG_LOCATION);
+			secret = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_SECRET, CONFIG_LOCATION);
 		}
 		
 		else if(payeeEntity.equals("PYADVERTISING")){
