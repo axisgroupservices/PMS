@@ -122,12 +122,7 @@
 
 
 		
-		<dependency>
-			<groupId>org.axisgroup.client</groupId>
-			<artifactId>AxisGroup-ClientInterface</artifactId>
-			<version>200.00.0</version>
-			<type>jar</type>
-		</dependency>
+
 		
 		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
 <dependency>
