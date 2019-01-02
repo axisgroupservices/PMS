@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.lang.StringUtils;
+
 import org.apache.log4j.Logger;
 import org.axisgroup.common.dto.Amount;
 import org.axisgroup.confhandler.ConfigurationHandler;
@@ -17,6 +17,7 @@ import org.axisgroup.paypal.utils.PayOutApplication;
 import org.axisgroup.paypal.utils.PayoutStakeHolderInfo;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -47,7 +48,7 @@ public class PayoutController {
 					String receiver = ConfigurationHandler
 							.getValueToConfigurationKey(RECEIVER_PAYPAL_EMAIL, CONFIG_LOCATION);
 					paymentStatus = transferPayment(note, transAmount, orderId, sender, receiver);
-					if (StringUtils.isBlank(paymentStatus)) {
+					if (StringUtils.isEmpty(paymentStatus)) {
 						paymentStatus = "Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer";
 					}
 		else{
