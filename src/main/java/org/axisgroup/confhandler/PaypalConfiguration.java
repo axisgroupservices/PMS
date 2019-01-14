@@ -13,6 +13,7 @@ public class PaypalConfiguration {
 	private static final String ROBOADPLACER_SECRET = "roboadplacer.secret";
 	private static final String PAYPAL_PAYMENT_MODE = "paypal.payment.mode";
 	private static final String SERVER_URL="server.url";
+	private static final String REDIRECT_URL="redirect.url";
 	
 	// Paypal apis
 	private static final String CREATE_PAYMENT = "create.payment";
@@ -24,6 +25,7 @@ public class PaypalConfiguration {
 	private String createPayment;
 	private String mode;
 	private String serverURL;
+	private String redirectURL;
 	
 
 	public PaypalConfiguration() {
@@ -36,6 +38,7 @@ public class PaypalConfiguration {
 			this.createPayment = ConfigurationHandler.getValueToConfigurationKey(CREATE_PAYMENT, CONFIG_LOCATION);
 			this.mode=ConfigurationHandler.getValueToConfigurationKey(PAYPAL_PAYMENT_MODE, CONFIG_LOCATION);
 			this.serverURL=ConfigurationHandler.getValueToConfigurationKey(SERVER_URL, CONFIG_LOCATION);
+			this.redirectURL=ConfigurationHandler.getValueToConfigurationKey(REDIRECT_URL, CONFIG_LOCATION);
 
 			if (!this.payPalEndPoint.isEmpty() && !this.clientId.isEmpty() && !this.secret.isEmpty() && !this.createPayment.isEmpty() && !this.mode.isEmpty() && !this.serverURL.isEmpty()) {
 				logger.info("all properties successfully built");
@@ -90,6 +93,12 @@ public class PaypalConfiguration {
 	}
 	public void setServerURL(String serverURL) {
 		this.serverURL = serverURL;
+	}
+	public String getRedirectURL() {
+		return redirectURL;
+	}
+	public void setRedirectURL(String redirectURL) {
+		this.redirectURL = redirectURL;
 	}
 	
 	

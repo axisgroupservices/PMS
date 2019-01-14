@@ -89,25 +89,25 @@ public class AuthorizeAndCaptureApplication {
 		
 		  String paymentId=null;
 		try {
-		 Payment createdPayment = payment.create(apiContext);
+		Payment createdPayment = payment.create(apiContext);
 
 		 paymentId=createdPayment.getId();
 		  
-		 // paymentId="PAY-4MF16587M9071572ELMBAPXY";
+		//  paymentId="PAY-8VH651325G939284WLQYAREI";
 		  
 		  Payment payment2 = Payment.get(apiContext,
 					paymentId);
 		
 		  
-		  logger.debug(payment2);
+		  logger.info(payment2);
 		//approve pay 
 		PaymentExecution p =new PaymentExecution();
 		p.setPayerId("KCBENVYUARHGN");
-		//Payment approvedPayment= payment2.execute(apiContext, p);
+		Payment approvedPayment= payment2.execute(apiContext, p);
 		
 		
 		
-		//logger.debug("State "+ approvedPayment.getState());
+		logger.info("State "+ approvedPayment.getState());
 		
 		//Capture
 	//	String authorizationID=payment2.getTransactions().get(0).getRelatedResources().get(0).getAuthorization().getId();		

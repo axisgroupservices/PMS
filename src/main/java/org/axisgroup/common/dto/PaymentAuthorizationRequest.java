@@ -1,12 +1,14 @@
 package org.axisgroup.common.dto;
 
-public class PaymentAuthorizationRequest {
-	
+public class PaymentAuthorizationRequest {	
 	private String business ;
 	private String currency_code; 
 	private String item_name ;
 	private String amount ;
 	private String custom ;
+	private String ownerEmail;;
+	private String buyerEmail;
+	
 	public String getBusiness() {
 		return business;
 	}
@@ -36,6 +38,18 @@ public class PaymentAuthorizationRequest {
 	}
 	public void setCustom(String custom) {
 		this.custom = custom;
+	}
+	public String getOwnerEmail() {
+		return ownerEmail;
+	}
+	public void setOwnerEmail(String ownerEmail) {
+		this.ownerEmail = ownerEmail;
+	}
+	public String getBuyerEmail() {
+		return buyerEmail;
+	}
+	public void setBuyerEmail(String buyerEmail) {
+		this.buyerEmail = buyerEmail;
 	}
 	
 	

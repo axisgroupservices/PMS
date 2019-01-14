@@ -1,29 +1,11 @@
 package org.axisgroup.base.controller;
 
-import java.io.IOException;
-import java.text.DecimalFormat;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-import org.apache.commons.codec.binary.Base64;
-import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.axisgroup.base.domain.common.Contract;
-import org.axisgroup.client.response.GetContractInfoBySpotIdResponse;
-import org.axisgroup.common.dto.Amount;
 import org.axisgroup.confhandler.ConfigurationHandler;
-import org.axisgroup.confhandler.PayOutApplication;
-import org.axisgroup.confhandler.PrettyPrinterJson;
-import org.axisgroup.paypal.payouts.request.PaypalPayoutRequest;
-import org.axisgroup.paypal.payouts.response.PaypalPayoutResponse;
-import org.axisgroup.paypal.utils.PayoutStakeHolderInfo;
-import org.codehaus.jackson.JsonGenerationException;
-import org.codehaus.jackson.map.JsonMappingException;
-import org.roboadplacer.request.GetContractsInfoBySpotId;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
@@ -32,6 +14,8 @@ import org.springframework.web.client.RestTemplate;
  * 1. Get Contract by SpotID 2. Transfer balance to PyAdvertising from
  * Roboadplacer 3. Wait for 15 seconds 4. Transfer balance to CableOperator.
  */
+
+
 
 @RestController
 @RequestMapping("/orderConfirmation")
@@ -44,6 +28,7 @@ public class OrderConfirmationAndPaymentController {
 	private static final String CONFIG_LOCATION = "env.properties";
 	private static final String[] PAYEE_ENTITIES = { "ROBOADPLACER", "PYADVERTISING" };
 
+	/*
 	@RequestMapping("/payouts")
 	public String orderConfirmationAndPayouts(@RequestParam("spotId") String spotId) {
 		String paymentStatus = null;
@@ -228,6 +213,8 @@ public class OrderConfirmationAndPaymentController {
 		return response;
 
 	}
+	
+	/*
 
 	/**
 	 * @param spotId
@@ -252,7 +239,7 @@ public class OrderConfirmationAndPaymentController {
 		}
 		return isPaymentSaved;
 	}
-
+/*
 	private static List<String> generateSplitAmountToStakeHolders(GetContractInfoBySpotIdResponse response) {
 		List<String> priceSplitsHolder = null;
 
@@ -322,7 +309,7 @@ public class OrderConfirmationAndPaymentController {
 		return priceSplitsHolder;
 	}
 	
-	*/
+	
 
 	public static void main(String[] args) {
 		// This payouts by spotIDs
@@ -406,4 +393,5 @@ public class OrderConfirmationAndPaymentController {
 		logger.info("The status of payouts api is " + paymentStatus);
 	}
 
+*/
 }

@@ -121,13 +121,13 @@
 </dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/paypal-core -->
+<dependency>
+    <groupId>com.paypal.sdk</groupId>
+    <artifactId>paypal-core</artifactId>
+    <version>1.7.2</version>
+</dependency>
 		
-		<dependency>
-			<groupId>org.axisgroup.client</groupId>
-			<artifactId>AxisGroup-ClientInterface</artifactId>
-			<version>200.00.0</version>
-			<type>jar</type>
-		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
 <dependency>
@@ -136,6 +136,13 @@
     <version>1.14.0</version>
 </dependency>
 <!-- Thanks for using https://jar-download.com -->
+
+ <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+    <version>2.0.4.RELEASE</version>
+</dependency>
 		
 		
 

@@ -1,4 +1,5 @@
-package org.axisgroup.base.controller;
+
+/*package org.axisgroup.base.controller;
 
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -17,7 +18,7 @@ import org.springframework.web.client.RestTemplate;
 
 public class Application {
 	private static final Logger logger = Logger.getLogger(AccountController.class);
-
+/*
 	public static void main(String[] args) throws JsonGenerationException, JsonMappingException, IOException {
 		
 		GetContractsInfoBySpotId getContractsInfoBySpotIdRequest = new GetContractsInfoBySpotId();
@@ -38,6 +39,7 @@ public class Application {
 		}
 
 	}
+
 
 	private static List<String> getAmountToCableOperator(GetContractInfoBySpotIdResponse response) {
 		// TODO Auto-generated method stub
@@ -83,3 +85,5 @@ public class Application {
 	}
 
 }
+
+	*/
