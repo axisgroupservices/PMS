@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.paypal.api.services</groupId>
-	<artifactId>PayPal-Services</artifactId>
+	<artifactId>PaymentManagement</artifactId>
 	<version>1.0.0</version>
 	
 	<url>http://maven.apache.org</url>
@@ -121,8 +121,13 @@
 </dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/paypal-core -->
+<dependency>
+    <groupId>com.paypal.sdk</groupId>
+    <artifactId>paypal-core</artifactId>
+    <version>1.7.2</version>
+</dependency>
 		
-
 		
 		<!-- https://mvnrepository.com/artifact/com.paypal.sdk/rest-api-sdk -->
 <dependency>
@@ -131,12 +136,19 @@
     <version>1.14.0</version>
 </dependency>
 <!-- Thanks for using https://jar-download.com -->
+
+ <dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <scope>test</scope>
+    <version>2.0.4.RELEASE</version>
+</dependency>
 		
 		
 
 	</dependencies>
 	<build>
-		<finalName>payments</finalName>
+		<finalName>PaymentManagement</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

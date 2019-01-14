@@ -3104,6 +3104,7 @@
     "transactions" : null
   }
 } 
+<<<<<<< HEAD
 2018-05-15 00:24:22,623 DEBUG  [RestTemplate] Created POST request for "https://api.sandbox.paypal.com/v1/payments/payment/PAY-2LP90386G5754700ALL5G4FA/execute" 
 2018-05-15 00:24:22,709 DEBUG  [RestTemplate] Setting request Accept header to [application/json, application/json, application/*+json, application/*+json] 
 2018-05-15 00:24:22,740 DEBUG  [RestTemplate] Writing [org.axisgroup.paypal.payouts.request.ExecuteApprovedPaymentRequest@6e2aa843] as "application/json" using [org.springframework.http.converter.json.MappingJackson2HttpMessageConverter@6f36c2f0] 
@@ -9807,6 +9808,346 @@
     },
     {
       "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-74J971488K827884S",
+=======
+2017-07-30 19:39:46,021 INFO   [ConfigurationHandler] Configuration value to Configuration Key: commision.percent (should not be null) : is 10.0 
+2017-07-30 19:39:46,026 INFO   [OrderConfirmationAndPaymentController] Balance transfering to CableOpeartor is 3.64 out of 4.00 and to pyAdvertising after 0.25 cent paypal charge is 3.75 from Roboadplacer which has 4.00 and new balance to Pyadvertising (commisssion ) will be 0.11363636363636376 
+2017-07-30 19:39:46,026 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is pyadvertising-merchant@gmail.com 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] 15 secs waiting period completed!! 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] Transfering balance to spyburn@cabletvadsamerica.com 
+2017-07-30 19:40:01,026 INFO   [OrderConfirmationAndPaymentController] The status of payouts api is The payment to this order id is already completed. 
+2017-08-07 00:27:07,113 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payments@pyadvertising.com 
+2017-08-07 00:27:07,115 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-08-07 00:27:07,634 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" 
+2017-08-07 00:27:07,638 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-08-07 00:27:08,811 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" resulted in 200 (OK) 
+2017-08-07 00:27:08,811 DEBUG  [RestTemplate] Reading [java.lang.String] as "text/plain;charset=ISO-8859-1" using [org.springframework.http.converter.StringHttpMessageConverter@ed9d034] 
+2017-08-07 00:27:08,815 INFO   [PayOutApplication] Payment for OrderId 45 is saved. Is payment saved (must Be true) ? 1012 
+2017-08-07 00:28:05,207 INFO   [ConfigurationHandler] Configuration value to Configuration Key: pyadvertising.paypalinfo (should not be null) : is payments@pyadvertising.com 
+2017-08-07 00:28:05,221 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://kite.infinite-data.com:8080 
+2017-08-07 00:28:05,965 DEBUG  [RestTemplate] Created GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" 
+2017-08-07 00:28:05,968 DEBUG  [RestTemplate] Setting request Accept header to [text/plain, application/json, application/*+json, */*] 
+2017-08-07 00:28:06,123 DEBUG  [RestTemplate] GET request for "http://kite.infinite-data.com:8080/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId=45" resulted in 200 (OK) 
+2017-08-07 00:28:06,124 DEBUG  [RestTemplate] Reading [java.lang.String] as "text/plain;charset=ISO-8859-1" using [org.springframework.http.converter.StringHttpMessageConverter@ed9d034] 
+2017-08-07 00:28:06,130 INFO   [PayOutApplication] Payment for OrderId 45 is saved. Is payment saved (must Be true) ? 1013 
+2019-01-04 12:41:49,793 DEBUG  [SpringJUnit4ClassRunner] SpringJUnit4ClassRunner constructor called with [class org.axisgroup.base.controller.test.AuthorizeAndCaptureControllerTest] 
+2019-01-04 12:41:49,803 DEBUG  [BootstrapUtils] Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate] 
+2019-01-04 12:41:49,809 DEBUG  [BootstrapUtils] Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)] 
+2019-01-04 19:29:49,167 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com 
+2019-01-04 19:29:49,196 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2019-01-04 19:29:49,197 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2019-01-04 19:29:49,197 INFO   [ConfigurationHandler] Configuration value to Configuration Key: create.payment (should not be null) : is /v1/payments/payment/ 
+2019-01-04 19:29:49,198 INFO   [ConfigurationHandler] Configuration value to Configuration Key: paypal.payment.mode (should not be null) : is sandbox 
+2019-01-04 19:29:49,198 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080/ 
+2019-01-04 19:29:49,198 INFO   [AuthorizeAndCaptureApplication] all properties successfully built 
+2019-01-04 19:29:49,490 INFO   [PrettyPrinterJson] {
+  "configLocation" : null,
+  "payPalEndPoint" : "https://api.sandbox.paypal.com",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU",
+  "createPayment" : "/v1/payments/payment/",
+  "mode" : "sandbox",
+  "serverURL" : "http://localhost:8080/"
+} 
+2019-01-04 19:29:53,910 DEBUG  [AuthorizeAndCaptureApplication] {
+  "id": "PAY-8VH651325G939284WLQYAREI",
+  "intent": "authorize",
+  "cart": "9T607990FU154252T",
+  "transactions": [
+    {
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "4.54",
+        "details": {
+          "subtotal": "4.00",
+          "shipping": "0.50",
+          "tax": "0.04"
+        }
+      },
+      "payee": {
+        "email": "roboad-merchant-1@gmail.com",
+        "merchant_id": "MA3LZAXD6AEFA"
+      },
+      "description": "This is the payment transaction description."
+    }
+  ],
+  "state": "created",
+  "redirect_urls": {
+    "return_url": "http://localhost:8080/process?paymentId\u003dPAY-8VH651325G939284WLQYAREI",
+    "cancel_url": "http://localhost:8080/cancel"
+  },
+  "create_time": "2019-01-05T01:29:53Z",
+  "update_time": "2019-01-05T01:29:53Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI/execute",
+      "rel": "execute",
+      "method": "POST"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-9T607990FU154252T",
+      "rel": "approval_url",
+      "method": "REDIRECT"
+    }
+  ]
+} 
+2019-01-04 19:45:52,553 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com 
+2019-01-04 19:45:52,573 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2019-01-04 19:45:52,574 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2019-01-04 19:45:52,574 INFO   [ConfigurationHandler] Configuration value to Configuration Key: create.payment (should not be null) : is /v1/payments/payment/ 
+2019-01-04 19:45:52,575 INFO   [ConfigurationHandler] Configuration value to Configuration Key: paypal.payment.mode (should not be null) : is sandbox 
+2019-01-04 19:45:52,575 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080/ 
+2019-01-04 19:45:52,575 INFO   [AuthorizeAndCaptureApplication] all properties successfully built 
+2019-01-04 19:45:52,977 INFO   [PrettyPrinterJson] {
+  "configLocation" : null,
+  "payPalEndPoint" : "https://api.sandbox.paypal.com",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU",
+  "createPayment" : "/v1/payments/payment/",
+  "mode" : "sandbox",
+  "serverURL" : "http://localhost:8080/"
+} 
+2019-01-04 19:45:55,691 DEBUG  [AuthorizeAndCaptureApplication] {
+  "id": "PAY-8VH651325G939284WLQYAREI",
+  "intent": "authorize",
+  "cart": "9T607990FU154252T",
+  "transactions": [
+    {
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "4.54",
+        "details": {
+          "subtotal": "4.00",
+          "shipping": "0.50",
+          "tax": "0.04"
+        }
+      },
+      "payee": {
+        "email": "roboad-merchant-1@gmail.com",
+        "merchant_id": "MA3LZAXD6AEFA"
+      },
+      "description": "This is the payment transaction description."
+    }
+  ],
+  "state": "created",
+  "redirect_urls": {
+    "return_url": "http://localhost:8080/process?paymentId\u003dPAY-8VH651325G939284WLQYAREI",
+    "cancel_url": "http://localhost:8080/cancel"
+  },
+  "create_time": "2019-01-05T01:29:53Z",
+  "update_time": "2019-01-05T01:45:55Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI/execute",
+      "rel": "execute",
+      "method": "POST"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-9T607990FU154252T",
+      "rel": "approval_url",
+      "method": "REDIRECT"
+    }
+  ]
+} 
+2019-01-04 20:07:01,021 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com 
+2019-01-04 20:07:01,031 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2019-01-04 20:07:01,031 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2019-01-04 20:07:01,032 INFO   [ConfigurationHandler] Configuration value to Configuration Key: create.payment (should not be null) : is /v1/payments/payment/ 
+2019-01-04 20:07:01,032 INFO   [ConfigurationHandler] Configuration value to Configuration Key: paypal.payment.mode (should not be null) : is sandbox 
+2019-01-04 20:07:01,033 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080/ 
+2019-01-04 20:07:01,033 INFO   [AuthorizeAndCaptureApplication] all properties successfully built 
+2019-01-04 20:07:01,323 INFO   [PrettyPrinterJson] {
+  "configLocation" : null,
+  "payPalEndPoint" : "https://api.sandbox.paypal.com",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU",
+  "createPayment" : "/v1/payments/payment/",
+  "mode" : "sandbox",
+  "serverURL" : "http://localhost:8080/"
+} 
+2019-01-04 20:07:03,407 DEBUG  [AuthorizeAndCaptureApplication] {
+  "id": "PAY-8VH651325G939284WLQYAREI",
+  "intent": "authorize",
+  "cart": "9T607990FU154252T",
+  "transactions": [
+    {
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "4.54",
+        "details": {
+          "subtotal": "4.00",
+          "shipping": "0.50",
+          "tax": "0.04"
+        }
+      },
+      "payee": {
+        "email": "roboad-merchant-1@gmail.com",
+        "merchant_id": "MA3LZAXD6AEFA"
+      },
+      "description": "This is the payment transaction description."
+    }
+  ],
+  "state": "created",
+  "redirect_urls": {
+    "return_url": "http://localhost:8080/process?paymentId\u003dPAY-8VH651325G939284WLQYAREI",
+    "cancel_url": "http://localhost:8080/cancel"
+  },
+  "create_time": "2019-01-05T01:29:53Z",
+  "update_time": "2019-01-05T02:07:03Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-8VH651325G939284WLQYAREI/execute",
+      "rel": "execute",
+      "method": "POST"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-9T607990FU154252T",
+      "rel": "approval_url",
+      "method": "REDIRECT"
+    }
+  ]
+} 
+2019-01-04 20:39:06,834 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com 
+2019-01-04 20:39:06,854 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2019-01-04 20:39:06,855 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2019-01-04 20:39:06,855 INFO   [ConfigurationHandler] Configuration value to Configuration Key: create.payment (should not be null) : is /v1/payments/payment/ 
+2019-01-04 20:39:06,856 INFO   [ConfigurationHandler] Configuration value to Configuration Key: paypal.payment.mode (should not be null) : is sandbox 
+2019-01-04 20:39:06,856 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080/ 
+2019-01-04 20:39:06,856 INFO   [AuthorizeAndCaptureApplication] all properties successfully built 
+2019-01-04 20:39:07,137 INFO   [PrettyPrinterJson] {
+  "configLocation" : null,
+  "payPalEndPoint" : "https://api.sandbox.paypal.com",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU",
+  "createPayment" : "/v1/payments/payment/",
+  "mode" : "sandbox",
+  "serverURL" : "http://localhost:8080/"
+} 
+2019-01-04 20:39:11,887 DEBUG  [AuthorizeAndCaptureApplication] {
+  "id": "PAY-9LX316503M204732FLQYBRTY",
+  "intent": "authorize",
+  "cart": "84K57016U3199410E",
+  "transactions": [
+    {
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "4.54",
+        "details": {
+          "subtotal": "4.00",
+          "shipping": "0.50",
+          "tax": "0.04"
+        }
+      },
+      "payee": {
+        "email": "roboad-merchant-1@gmail.com",
+        "merchant_id": "MA3LZAXD6AEFA"
+      },
+      "description": "This is the payment transaction description."
+    }
+  ],
+  "state": "created",
+  "redirect_urls": {
+    "return_url": "http://localhost:8080/process?paymentId\u003dPAY-9LX316503M204732FLQYBRTY",
+    "cancel_url": "http://localhost:8080/cancel"
+  },
+  "create_time": "2019-01-05T02:39:11Z",
+  "update_time": "2019-01-05T02:39:11Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-9LX316503M204732FLQYBRTY",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-9LX316503M204732FLQYBRTY/execute",
+      "rel": "execute",
+      "method": "POST"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-84K57016U3199410E",
+      "rel": "approval_url",
+      "method": "REDIRECT"
+    }
+  ]
+} 
+2019-01-04 20:56:12,697 INFO   [ConfigurationHandler] Configuration value to Configuration Key: oauth.endpoint.paypal (should not be null) : is https://api.sandbox.paypal.com 
+2019-01-04 20:56:12,723 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.clientId (should not be null) : is AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb 
+2019-01-04 20:56:12,724 INFO   [ConfigurationHandler] Configuration value to Configuration Key: roboadplacer.secret (should not be null) : is EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU 
+2019-01-04 20:56:12,724 INFO   [ConfigurationHandler] Configuration value to Configuration Key: create.payment (should not be null) : is /v1/payments/payment/ 
+2019-01-04 20:56:12,725 INFO   [ConfigurationHandler] Configuration value to Configuration Key: paypal.payment.mode (should not be null) : is sandbox 
+2019-01-04 20:56:12,725 INFO   [ConfigurationHandler] Configuration value to Configuration Key: server.url (should not be null) : is http://localhost:8080/ 
+2019-01-04 20:56:12,725 INFO   [AuthorizeAndCaptureApplication] all properties successfully built 
+2019-01-04 20:56:13,568 INFO   [PrettyPrinterJson] {
+  "configLocation" : null,
+  "payPalEndPoint" : "https://api.sandbox.paypal.com",
+  "clientId" : "AWm_Y-NYZ_-A-UH7kSw00d95dY7mG6oZIrMTIQCwIiYk-7HcKNRF3gJzyNf2GU4AxaMi3xRt6URmIfMb",
+  "secret" : "EMjbaGV6Lmri0l4apIZOmYBHqQ9Q4AvqecaPpwJcmBcCxDlOP4AbGYeyp1JnYG68FNTs9DNzVkazApAU",
+  "createPayment" : "/v1/payments/payment/",
+  "mode" : "sandbox",
+  "serverURL" : "http://localhost:8080/"
+} 
+2019-01-04 20:56:18,525 INFO   [AuthorizeAndCaptureApplication] {
+  "id": "PAY-3RE16623V7093732CLQYBZUA",
+  "intent": "authorize",
+  "cart": "0V104428G9675650S",
+  "transactions": [
+    {
+      "related_resources": [],
+      "amount": {
+        "currency": "USD",
+        "total": "4.54",
+        "details": {
+          "subtotal": "4.00",
+          "shipping": "0.50",
+          "tax": "0.04"
+        }
+      },
+      "payee": {
+        "email": "roboad-merchant-1@gmail.com",
+        "merchant_id": "MA3LZAXD6AEFA"
+      },
+      "description": "This is the payment transaction description."
+    }
+  ],
+  "state": "created",
+  "redirect_urls": {
+    "return_url": "http://localhost:8080/process?paymentId\u003dPAY-3RE16623V7093732CLQYBZUA",
+    "cancel_url": "http://localhost:8080/cancel"
+  },
+  "create_time": "2019-01-05T02:56:16Z",
+  "update_time": "2019-01-05T02:56:18Z",
+  "links": [
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-3RE16623V7093732CLQYBZUA",
+      "rel": "self",
+      "method": "GET"
+    },
+    {
+      "href": "https://api.sandbox.paypal.com/v1/payments/payment/PAY-3RE16623V7093732CLQYBZUA/execute",
+      "rel": "execute",
+      "method": "POST"
+    },
+    {
+      "href": "https://www.sandbox.paypal.com/cgi-bin/webscr?cmd\u003d_express-checkout\u0026token\u003dEC-0V104428G9675650S",
+>>>>>>> refs/heads/authorize_capture
       "rel": "approval_url",
       "method": "REDIRECT"
     }
