@@ -66,7 +66,7 @@ public class AuthorizeAndCaptureController {
 			RedirectUrls redirectUrls = new RedirectUrls();
 			redirectUrls.setCancelUrl(paypalConfigs.getServerURL() + "/cancel");
 			redirectUrls
-					.setReturnUrl(paypalConfigs.getServerURL() + "/PaymentManagement/payment/execute-payment?amount="
+					.setReturnUrl(paypalConfigs.getServerURL() + "/pms-advertising/payment/execute-payment?amount="
 							+ request.getAmount() + "&orderId=" + request.getCustom()+"&sellerEmail="+request.getOwnerEmail()+"&buyerEmail="+request.getBuyerEmail());
 
 			// Set payment details

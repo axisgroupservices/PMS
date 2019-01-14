@@ -148,7 +148,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>PaymentManagement</finalName>
+		<finalName>pms-advertising</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
