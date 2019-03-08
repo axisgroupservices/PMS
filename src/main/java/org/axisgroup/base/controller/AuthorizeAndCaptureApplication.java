@@ -14,14 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.axisgroup.confhandler.ConfigurationHandler;
 import org.axisgroup.confhandler.PaypalConfiguration;
-import org.axisgroup.confhandler.PrettyPrinterJson;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 
 import com.paypal.api.payments.Amount;
-import com.paypal.api.payments.Authorization;
 import com.paypal.api.payments.Capture;
 import com.paypal.api.payments.Details;
 import com.paypal.api.payments.Payer;

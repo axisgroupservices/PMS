@@ -1,6 +1,7 @@
 package org.axisgroup.base.controller;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -66,7 +67,7 @@ public class AuthorizeAndCaptureController {
 			RedirectUrls redirectUrls = new RedirectUrls();
 			redirectUrls.setCancelUrl(paypalConfigs.getServerURL() + "/cancel");
 			redirectUrls
-					.setReturnUrl(paypalConfigs.getServerURL() + "/pms-advertising/payment/execute-payment?amount="
+					.setReturnUrl(paypalConfigs.getServerURL() + "pms-advertising/payment/execute-payment?amount="
 							+ request.getAmount() + "&orderId=" + request.getCustom()+"&sellerEmail="+request.getOwnerEmail()+"&buyerEmail="+request.getBuyerEmail());
 
 			// Set payment details
@@ -165,9 +166,9 @@ public class AuthorizeAndCaptureController {
 						+ "&authorizationId=" + authorizationID + "&orderId=" + orderId+"&sellerEmail="+sellerEmail+"&buyerEmail="+buyerEmail);
 			}
 		} catch (PayPalRESTException e) {
-			logger.error(e.getStackTrace());
+			logger.error("Exception occured", e);
 		} catch (Exception e) {
-			logger.debug(e.getStackTrace());
+			logger.error("Exception occured", e);
 		}
 
 	}
@@ -189,14 +190,17 @@ public class AuthorizeAndCaptureController {
 			String secret = paypalConfigs.getSecret();
 			String mode = paypalConfigs.getMode();
 			APIContext apiContext = new APIContext(clientId, secret, mode);
-
+			double value = Double.valueOf(finalAmount);
+			String formattedAmount=String.format("%.2f", value);
+			logger.info("Formatted Price "+ formattedAmount);
 			Authorization authorization = Authorization.get(apiContext, authorizationId);
 
 			// ###Amount
 			// Let's you specify a capture amount.
 			Amount amount2 = new Amount();
 			amount2.setCurrency("USD");
-			amount2.setTotal(finalAmount);
+		
+			amount2.setTotal(formattedAmount);
 
 			// ###Capture
 			// A capture transaction
@@ -222,9 +226,9 @@ public class AuthorizeAndCaptureController {
 
 		} catch (PayPalRESTException e) {
 
-			logger.error(e.getStackTrace());
+			logger.error("Exception Occurred", e);
 		} catch (Exception e) {
-			logger.debug(e.getStackTrace());
+			logger.error("Exception Occurred", e);
 		}
 
 		return paymentStatus;
