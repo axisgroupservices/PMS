@@ -126,6 +126,7 @@ public class AuthorizeAndCaptureController {
 				logger.debug("#############All operation on create payment went successfull##################");
 			} else {
 				logger.debug("############Didn't retrieve the return URL. Throwing exceptions #########");
+				throw new Exception("return URL not formed correctly ");
 			}
 
 		} catch (PayPalRESTException e) {
@@ -175,9 +176,10 @@ public class AuthorizeAndCaptureController {
 
 	@RequestMapping("/capture-payment")
 	public String capturePayment(@RequestParam("authorizationId") String authorizationId,
-			@RequestParam("orderId") String orderId, @RequestParam("finalAmount") String finalAmount,
+			@RequestParam("orderId") String orderId, @RequestParam("finalAmount") String finalAmount, 
+			@RequestParam("seller")String sellerPaypal,
 
-			HttpServletResponse response) throws IOException {
+		HttpServletResponse response) throws IOException {
 
 		PaypalConfiguration paypalConfigs = new PaypalConfiguration();
 
@@ -219,7 +221,12 @@ public class AuthorizeAndCaptureController {
 			Capture responseCapture = authorization.capture(apiContext, capture);
 
 			if (responseCapture.getState().equals("completed")) {
-				paymentStatus = "Payment is successfully captured";
+				paymentStatus = "Payment is successfully captured for order Id "+ orderId;
+				
+				//Now transfering to the webmaster mail
+				
+				PayoutController payoutController= new PayoutController();
+				paymentStatus=payoutController.payouts(orderId, sellerPaypal,formattedAmount, "Payment made for orderId "+orderId);
 			} else {
 				paymentStatus = "Something went wrong. Please call us to resolve the issue !";
 			}
@@ -243,6 +250,7 @@ public class AuthorizeAndCaptureController {
 					if (link != null) {
 						if (link.getRel().equals("approval_url")) {
 							returnURL = link.getHref();
+							logger.info("Returned URL is "+ returnURL);
 						}
 					}
 				}

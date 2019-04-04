@@ -32,7 +32,7 @@ public class PayoutController {
 
 	private static final Logger logger = Logger.getLogger(PayoutController.class);
 	private static final String SENDER_PAYPAL_EMAIL = "sender.paypalinfo";
-	private static final String RECEIVER_PAYPAL_EMAIL = "receiver.paypalinfo";
+	//private static final String RECEIVER_PAYPAL_EMAIL = "receiver.paypalinfo";
 	private static final String CONFIG_LOCATION = "env.properties";
 	
 
@@ -40,14 +40,13 @@ public class PayoutController {
 	public String payouts(
 			@RequestParam("orderId") String orderId,
 			@RequestParam("trans-amount") String transAmount,
-			@RequestParam("note") String note) {
+			@RequestParam("note") String note, @RequestParam("seller") String sellerPaypal) {
 		String paymentStatus = null; 
 		try {
 					String sender = ConfigurationHandler
 							.getValueToConfigurationKey(SENDER_PAYPAL_EMAIL, CONFIG_LOCATION);
-					String receiver = ConfigurationHandler
-							.getValueToConfigurationKey(RECEIVER_PAYPAL_EMAIL, CONFIG_LOCATION);
-					paymentStatus = transferPayment(note, transAmount, orderId, sender, receiver);
+				
+					paymentStatus = transferPayment(note, transAmount, orderId, sender, sellerPaypal);
 					if (StringUtils.isEmpty(paymentStatus)) {
 						paymentStatus = "Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer";
 					}
