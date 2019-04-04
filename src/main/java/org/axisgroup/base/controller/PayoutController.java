@@ -47,12 +47,7 @@ public class PayoutController {
 							.getValueToConfigurationKey(SENDER_PAYPAL_EMAIL, CONFIG_LOCATION);
 				
 					paymentStatus = transferPayment(note, transAmount, orderId, sender, sellerPaypal);
-					if (StringUtils.isEmpty(paymentStatus)) {
-						paymentStatus = "Paypal Info of cable operator is null. No balance transfered. Please, check Pyadvertising for manual transfer";
-					}
-		else{
-						paymentStatus="Balance splits did not form between different parties. Please check Pyadvertising. Pay transfer did not complete.";
-					}
+				
 		} catch (Exception e) {
 
 			logger.debug(e.getStackTrace());
@@ -64,29 +59,24 @@ public class PayoutController {
 	private static String transferPayment(String note, String transerBalance, String orderID,
 			String sender, String receiver) {
 		String paymentStatus = null;
-		String order="notpaid";
-		
-		if( order =="notpaid"){
+
 			try{
 							PaypalPayoutResponse response = transfer(receiver,
 									sender, transerBalance, note, orderID);
 							if (response.getError() == null) {
 								paymentStatus = "Payment was successfully completed. No action is needed";
-								//update order db
+								//update payment status to db
 							} else {
 								paymentStatus = "Something went wrong. Please, contact Administration. No balance transfered";
 							}
 				} catch (Exception e) {
-					logger.debug(e);
+					logger.error("Exception occured" ,e);
 
 					paymentStatus = "Error occured no balance was transfered. Please, contact Administration";
 
 				}
-			}
+			
 
-			else {
-				paymentStatus = "The payment to this order id is already completed.";
-			}
 		return paymentStatus;
 
 	}
@@ -136,7 +126,7 @@ public class PayoutController {
 	 * @param spotId
 	 * @return
 	 */
-	private static boolean savePaymentConfirmationToDB(String spotId) {
+	private static boolean savePaymentConfirmationToDB(String orderId) {
 		
 		Boolean isPaymentSaved = false;
 		try {
@@ -145,11 +135,11 @@ public class PayoutController {
 			String endPoint = url + resourcePath;
 
 			Map<String, String> uriParams = new HashMap<String, String>();
-			uriParams.put("spotId", spotId);
+			uriParams.put("spotId", orderId);
 			RestTemplate template = new RestTemplate();
 			isPaymentSaved = template.getForObject(endPoint, Boolean.class, uriParams);
 			logger.info(
-					"Payment for OrderId " + spotId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
+					"Payment for OrderId " + orderId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
 		} catch (HttpClientErrorException e) {
 			logger.error(e);
 		}
