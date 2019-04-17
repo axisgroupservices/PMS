@@ -39,70 +39,11 @@ public class PayOutApplication {
 	private static final String PYADVERTISING_SECRET = "pyadvertising.secret";
 
 	
-	public static void main(String[] args) throws IOException {
-		// For web, this location should be Meta-Inf/env.properties and that
-		// file must be there as well.
-		//getConfigurations();
-		
-		ConfigurationHandler.getValueToConfigurationKey("pyadvertising.paypalinfo", CONFIG_LOCATION);
-
-		PayOutApplication p= new PayOutApplication();
-		String id=p.generateUniqueBatchId("45");
-		
-		
-		System.out.println(id);
-		
-		
-		
-		
-		
-		
-	/*
-		List<PayoutStakeHolderInfo> stakeHoldersInfo = new ArrayList<>();
-		PayoutStakeHolderInfo stakeHolder = new PayoutStakeHolderInfo();
-		stakeHolder.setPaymentNote("This is payment for Month June");
-		Amount amount = new Amount();
-		amount.setCurrency("USD");
-		amount.setValue("1");
-
-		stakeHolder.setPayoutAmount(amount);
-		stakeHolder.setSenderItemId("201403140003");
-		stakeHolder.setRecipeintType("EMAIL");
-		stakeHolder.setPayPalAccountEmail("deepak.pokhrel132-buyer@gmail.com");
-
-		PayoutStakeHolderInfo stakeHolder2 = new PayoutStakeHolderInfo();
-		stakeHolder2.setPaymentNote("This is payment for Month June");
-		Amount amount2 = new Amount();
-		amount2.setCurrency("USD");
-		amount2.setValue("1");
-
-		stakeHolder2.setPayoutAmount(amount2);
-		stakeHolder2.setSenderItemId("201403140003");
-		stakeHolder2.setRecipeintType("EMAIL");
-		stakeHolder2.setPayPalAccountEmail("roboad-personal@gmail.com");
-
-		stakeHoldersInfo.add(stakeHolder);
-		stakeHoldersInfo.add(stakeHolder2);
-
-		String uniqueBatchIdperMonth = "2014021825";
-		String emailSubject = "You have a payout from Rest client!";
-
-		// Create request
-		PaypalPayoutRequest request = apps.createPaypalPayoutRequest(uniqueBatchIdperMonth, emailSubject,
-				stakeHoldersInfo);
-
-		// generate response sends amount to multiple user.
-		apps.payOut(request);
-		
-		
-		*/
-
-	}
 
 	public PaypalPayoutRequest createPaypalPayoutRequest(String emailSubject,
-			List<PayoutStakeHolderInfo> stakeHoldersInfo,String orderId) {
+			List<PayoutStakeHolderInfo> stakeHoldersInfo,String contractId) {
 		// TODO Auto-generated method stub
-		String uniqueBatchIdperMonth= generateUniqueBatchId(orderId);
+		String uniqueBatchIdperMonth= contractId;
 		logger.info("unique batch id "+uniqueBatchIdperMonth);
 		PaypalPayoutRequest request = new PaypalPayoutRequest();
 		// Create Batch header
@@ -119,27 +60,6 @@ public class PayOutApplication {
 
 		return request;
 
-	}
-
-	private String generateUniqueBatchId(String orderId) {
-		// TODO Auto-generated method stub
-		// TODO Auto-generated method stub
-				String isPaymentSaved = null;
-				try {
-					String url = ConfigurationHandler.getValueToConfigurationKey("server.url", "env.properties");
-					String resourcePath = "/RoboAdPlacer-ApiServices/get-unique-batch-id/paypal?spotId="+orderId;
-					String endPoint = url + resourcePath;
-
-					
-					RestTemplate template = new RestTemplate();
-					isPaymentSaved = template.getForObject(endPoint, String.class);
-					logger.info(
-							"Payment for OrderId " + orderId + " is saved. Is payment saved (must Be true) ? " + isPaymentSaved);
-				} catch (HttpClientErrorException e) {
-					logger.error(e);
-				}
-				return isPaymentSaved;
-		
 	}
 
 	public PaypalPayoutResponse payOut(PaypalPayoutRequest request, String payeeEntity ) {

@@ -5,9 +5,10 @@ public class PaymentAuthorizationRequest {
 	private String currency_code; 
 	private String item_name ;
 	private String amount ;
-	private String custom ;
+	private String contractId ;
 	private String ownerEmail;;
 	private String buyerEmail;
+	private String intent;
 	
 	public String getBusiness() {
 		return business;
@@ -33,11 +34,12 @@ public class PaymentAuthorizationRequest {
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public String getCustom() {
-		return custom;
+	
+	public String getContractId() {
+		return contractId;
 	}
-	public void setCustom(String custom) {
-		this.custom = custom;
+	public void setContractId(String contractId) {
+		this.contractId = contractId;
 	}
 	public String getOwnerEmail() {
 		return ownerEmail;
@@ -50,6 +52,12 @@ public class PaymentAuthorizationRequest {
 	}
 	public void setBuyerEmail(String buyerEmail) {
 		this.buyerEmail = buyerEmail;
+	}
+	public String getIntent() {
+		return intent;
+	}
+	public void setIntent(String intent) {
+		this.intent = intent;
 	}
 	
 	

@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-
 import org.apache.log4j.Logger;
 import org.axisgroup.common.dto.Amount;
 import org.axisgroup.confhandler.ConfigurationHandler;
@@ -17,7 +16,6 @@ import org.axisgroup.paypal.utils.PayOutApplication;
 import org.axisgroup.paypal.utils.PayoutStakeHolderInfo;
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -38,7 +36,7 @@ public class PayoutController {
 
 	@RequestMapping("/payouts")
 	public String payouts(
-			@RequestParam("orderId") String orderId,
+			@RequestParam("orderId") String contractId,
 			@RequestParam("trans-amount") String transAmount,
 			@RequestParam("note") String note, @RequestParam("seller") String sellerPaypal) {
 		String paymentStatus = null; 
@@ -46,7 +44,7 @@ public class PayoutController {
 					String sender = ConfigurationHandler
 							.getValueToConfigurationKey(SENDER_PAYPAL_EMAIL, CONFIG_LOCATION);
 				
-					paymentStatus = transferPayment(note, transAmount, orderId, sender, sellerPaypal);
+					paymentStatus = transferPayment(note, transAmount, contractId, sender, sellerPaypal);
 				
 		} catch (Exception e) {
 
@@ -56,13 +54,13 @@ public class PayoutController {
 		return paymentStatus;
 	}
 
-	private static String transferPayment(String note, String transerBalance, String orderID,
+	private  String transferPayment(String note, String transerBalance, String contractId,
 			String sender, String receiver) {
 		String paymentStatus = null;
 
 			try{
 							PaypalPayoutResponse response = transfer(receiver,
-									sender, transerBalance, note, orderID);
+									sender, transerBalance, note, contractId);
 							if (response.getError() == null) {
 								paymentStatus = "Payment was successfully completed. No action is needed";
 								//update payment status to db
@@ -81,8 +79,8 @@ public class PayoutController {
 
 	}
 
-	private static PaypalPayoutResponse transfer(String receiver,
-			String sender, String transferBalance, String note, String orderId)
+	private  PaypalPayoutResponse transfer(String receiver,
+			String sender, String transferBalance, String note, String contractId)
 			throws JsonGenerationException, JsonMappingException, IOException {
 		// TODO Auto-generated method stub
 		logger.info("Amount that is transfered to payee-entity " + receiver + " is " + transferBalance);
@@ -95,6 +93,7 @@ public class PayoutController {
 			reciepient_type = "PHONE";
 		}
 
+		logger.info("Recipient type is "+ reciepient_type);
 		PayOutApplication apps = new PayOutApplication();
 
 		List<PayoutStakeHolderInfo> stakeHoldersInfo = new ArrayList<>();
@@ -105,14 +104,14 @@ public class PayoutController {
 		amount.setValue(transferBalance);
 
 		stakeHolder.setPayoutAmount(amount);
-		stakeHolder.setSenderItemId(orderId);
+		stakeHolder.setSenderItemId(contractId);
 		stakeHolder.setRecipeintType(reciepient_type);
 		stakeHolder.setPayPalAccountEmail(receiver);
 
 		stakeHoldersInfo.add(stakeHolder);
 
 		PaypalPayoutRequest request = apps.createPaypalPayoutRequest( emailSubject,
-				stakeHoldersInfo,orderId);
+				stakeHoldersInfo,contractId);
 
 		PrettyPrinterJson.printObject(request);
 
