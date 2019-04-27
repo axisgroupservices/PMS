@@ -6,7 +6,8 @@ public class PaymentAuthorizationRequest {
 	private String item_name ;
 	private String amount ;
 	private String contractId ;
-	private String ownerEmail;;
+	private String ownerEmail;
+	private String sellerPaypal;
 	private String buyerEmail;
 	private String intent;
 	
@@ -58,6 +59,12 @@ public class PaymentAuthorizationRequest {
 	}
 	public void setIntent(String intent) {
 		this.intent = intent;
+	}
+	public String getSellerPaypal() {
+		return sellerPaypal;
+	}
+	public void setSellerPaypal(String sellerPaypal) {
+		this.sellerPaypal = sellerPaypal;
 	}
 	
 	

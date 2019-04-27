@@ -48,7 +48,7 @@ public class PayoutController {
 				
 		} catch (Exception e) {
 
-			logger.debug(e.getStackTrace());
+			logger.error("Exception Occured", e);
 		}
 		logger.info("The payment status of payouts api is " + paymentStatus);
 		return paymentStatus;
@@ -115,7 +115,7 @@ public class PayoutController {
 
 		PrettyPrinterJson.printObject(request);
 
-		PaypalPayoutResponse response = apps.payOut(request, receiver);
+		PaypalPayoutResponse response = apps.payOut(request);
 
 		return response;
 

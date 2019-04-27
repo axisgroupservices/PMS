@@ -7,14 +7,18 @@ import java.util.List;
 import java.util.Map;
 
 import org.apache.log4j.Logger;
+import org.axisgroup.base.controller.PayoutController;
+import org.axisgroup.common.dto.Amount;
 import org.axisgroup.common.dto.Item;
 import org.axisgroup.common.dto.PayoutError;
 import org.axisgroup.common.dto.SendBatchHeader;
 import org.axisgroup.confhandler.ConfigurationHandler;
+
 import org.axisgroup.confhandler.PaypalConfiguration;
 import org.axisgroup.confhandler.PrettyPrinterJson;
 import org.axisgroup.paypal.payouts.request.PaypalPayoutRequest;
 import org.axisgroup.paypal.payouts.response.PaypalPayoutResponse;
+
 import org.codehaus.jackson.JsonGenerationException;
 import org.codehaus.jackson.map.JsonMappingException;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -35,10 +39,49 @@ public class PayOutApplication {
 	private static final String PAYPAL_ENDPOINT = "oauth.endpoint.paypal";
 	private static final String RECEIVER_CLIENT_ID = "receiver.clientId";
 	private static final String RECEIVER_SECRET = "receiver.secret";
-	private static final String PYADVERTISING_CLIENT_ID = "pyadvertising.clientId";
-	private static final String PYADVERTISING_SECRET = "pyadvertising.secret";
-
 	
+
+	public static void main(String[] args) throws IOException {
+		// For web, this location should be Meta-Inf/env.properties and that
+		// file must be there as well.
+		//getConfigurations();
+		
+		ConfigurationHandler.getValueToConfigurationKey("pyadvertising.paypalinfo", CONFIG_LOCATION);
+
+		PayOutApplication p= new PayOutApplication();
+		String id="1";
+		
+	
+	
+		List<PayoutStakeHolderInfo> stakeHoldersInfo = new ArrayList<>();
+		PayoutStakeHolderInfo stakeHolder = new PayoutStakeHolderInfo();
+		stakeHolder.setPaymentNote("This is payment for Month June");
+		Amount amount = new Amount();
+		amount.setCurrency("USD");
+		amount.setValue("1");
+
+		stakeHolder.setPayoutAmount(amount);
+		stakeHolder.setSenderItemId("201403140003");
+		stakeHolder.setRecipeintType("EMAIL");
+		stakeHolder.setPayPalAccountEmail("deepak.pokhrel132-buyer@gmail.com");
+
+		
+		stakeHoldersInfo.add(stakeHolder);
+
+		String uniqueBatchIdperMonth = "2014021825";
+		String emailSubject = "You have a payout from Rest client!";
+
+		PayoutController payoutController= new PayoutController();
+		
+		payoutController.payouts(uniqueBatchIdperMonth, "4.00", "Payment made for orderId "+1, "serviceaxisgroup@gmail.com");
+		// generate response sends amount to multiple user.
+				
+		
+		
+		
+
+	}
+
 
 	public PaypalPayoutRequest createPaypalPayoutRequest(String emailSubject,
 			List<PayoutStakeHolderInfo> stakeHoldersInfo,String contractId) {
@@ -62,10 +105,10 @@ public class PayOutApplication {
 
 	}
 
-	public PaypalPayoutResponse payOut(PaypalPayoutRequest request, String payeeEntity ) {
+	public PaypalPayoutResponse payOut(PaypalPayoutRequest request ) {
 		// TODO Auto-generated method stub
 		// gets configuration
-		PaypalConfiguration configs = getConfigurations(payeeEntity);
+		PaypalConfiguration configs = getConfigurations();
 
 		PaypalPayoutResponse response = new PaypalPayoutResponse();
 		try {
@@ -84,7 +127,7 @@ public class PayOutApplication {
 					PaypalPayoutResponse.class);
 
 		} catch (HttpClientErrorException exception) {
-			logger.info("HttpClientErrorException occured");
+			logger.error("HttpClientErrorException occured at payOut ", exception);
 			response = new PaypalPayoutResponse();
 			if (exception != null) {
 				PayoutError error = new PayoutError();
@@ -97,6 +140,7 @@ public class PayOutApplication {
 			}
 
 		} catch (Exception e) {
+			logger.error("Exception occured at payOut ", e);
 			PayoutError error = new PayoutError();
 			error.setMessage(e.toString());
 			response.setError(error);
@@ -132,6 +176,7 @@ public class PayOutApplication {
 	public String getAccessToken(PaypalConfiguration configs) throws PayPalRESTException, JsonGenerationException, JsonMappingException, IOException {
 		// TODO Auto-generated method stub
 		Map<String, String> configurationMap = new HashMap<>();
+		logger.debug("Paypal endpoint is "+ configs.getPayPalEndPoint());
 		configurationMap.put("oauth.EndPoint", configs.getPayPalEndPoint());
 		OAuthTokenCredential aAuthTokenCredential = new OAuthTokenCredential(configs.getClientId(), configs.getSecret(),
 				configurationMap);
@@ -154,25 +199,17 @@ public class PayOutApplication {
 
 	}
 
-	private static PaypalConfiguration getConfigurations(String payeeEntity) {
+	private static PaypalConfiguration getConfigurations() {
 		PaypalConfiguration configs = null;
 		String payPalEndpoint=null;
 		String clientId=null;
 		String secret=null;
 		try{
-		if(payeeEntity.equals("ROBOADPLACER")){
+	
 			payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
 			clientId = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_CLIENT_ID, CONFIG_LOCATION);
 			secret = ConfigurationHandler.getValueToConfigurationKey(RECEIVER_SECRET, CONFIG_LOCATION);
-		}
 		
-		else if(payeeEntity.equals("PYADVERTISING")){
-			payPalEndpoint = ConfigurationHandler.getValueToConfigurationKey(PAYPAL_ENDPOINT, CONFIG_LOCATION);
-			clientId = ConfigurationHandler.getValueToConfigurationKey(PYADVERTISING_CLIENT_ID, CONFIG_LOCATION);
-			secret = ConfigurationHandler.getValueToConfigurationKey(PYADVERTISING_SECRET, CONFIG_LOCATION);
-		}
-		
-
 		if (!payPalEndpoint.isEmpty() && !clientId.isEmpty() && !secret.isEmpty()) {
 			configs = new PaypalConfiguration();
 			configs.setClientId(clientId);

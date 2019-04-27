@@ -68,7 +68,7 @@ public class AuthorizeAndCaptureController {
 			redirectUrls.setCancelUrl(paypalConfigs.getServerURL() + "/cancel");
 			redirectUrls
 					.setReturnUrl(paypalConfigs.getServerURL() + "pms-advertising/payment/execute-payment?amount="
-							+ request.getAmount() + "&contractId=" + request.getContractId()+"&sellerEmail="+request.getOwnerEmail()+"&buyerEmail="+request.getBuyerEmail());
+							+ request.getAmount() + "&contractId=" + request.getContractId()+"&sellerEmail="+request.getOwnerEmail()+"&buyerEmail="+request.getBuyerEmail()+"&sellerPaypal="+request.getSellerPaypal());
 
 			// Set payment details
 			Details details = new Details();
@@ -145,6 +145,7 @@ public class AuthorizeAndCaptureController {
 			@RequestParam("PayerID") String payerID, @RequestParam("contractId") String contractId,
 			@RequestParam("amount") String amount,
 			@RequestParam("sellerEmail") String sellerEmail,
+			@RequestParam("sellerPaypal") String sellerPaypal,
 			@RequestParam("buyerEmail") String buyerEmail,
 			
 			HttpServletResponse response) throws IOException {
@@ -164,7 +165,7 @@ public class AuthorizeAndCaptureController {
 					"Authorization id obtained after executing the payment (should not be null) " + authorizationID);
 			if (authorizationID != null && !authorizationID.isEmpty()) {
 				response.sendRedirect(paypalConfigs.getRedirectURL() + "/oms-advertising/process-order?amount=" + amount
-						+ "&authorizationId=" + authorizationID + "&contractId=" + contractId+"&sellerEmail="+sellerEmail+"&buyerEmail="+buyerEmail);
+						+ "&authorizationId=" + authorizationID + "&contractId=" + contractId+"&sellerEmail="+sellerEmail+"&buyerEmail="+buyerEmail+"&sellerPaypal="+sellerPaypal);
 			}
 		} catch (PayPalRESTException e) {
 			logger.error("Exception occured", e);
@@ -185,7 +186,7 @@ public class AuthorizeAndCaptureController {
 
 		String paymentStatus = null;
 
-		logger.info("decrypted spotID " + contractId);
+		logger.info("Contract ID " + contractId);
 
 		try {
 			String clientId = paypalConfigs.getClientId();
@@ -226,7 +227,8 @@ public class AuthorizeAndCaptureController {
 				//Now transfering to the webmaster mail
 				
 				PayoutController payoutController= new PayoutController();
-				paymentStatus=payoutController.payouts(contractId, sellerPaypal,formattedAmount, "Payment made for orderId "+contractId);
+				
+				paymentStatus=payoutController.payouts(contractId, formattedAmount, "Payment made for orderId "+contractId, sellerPaypal);
 			} else {
 				paymentStatus = "Something went wrong. Please call us to resolve the issue !";
 			}
